@@ -1,0 +1,122 @@
+.accordionsWrap {
+  width: 100%;
+  display: block;
+}
+.accordion {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid #1A5632;
+  opacity: 1;
+  max-width: 670px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+  counter-increment: accordion;
+}
+.accordion h5:before {
+  content: counter(accordion) '. ';
+}
+.accordion .top {
+  perspective: 800px;
+  backface-visibility: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  font-family: Gilroy;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 6px;
+  padding-bottom: 12px;
+  padding-right: 30px;
+}
+.accordion .top h5 {
+  margin: 0;
+  font-weight: 600;
+}
+.accordion .top .arrow {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: 0;
+  top: 9px;
+  border: 1px solid #1A5632;
+  border-radius: 50%;
+}
+.accordion .top .arrow:after,
+.accordion .top .arrow:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 1px;
+  background: #1A5632;
+  transition: 0.2s;
+}
+.accordion .top .arrow:after {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.accordion .top:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: #68b08e;
+  transform-origin: 100% 0;
+  transform: scale(0, 1);
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.accordion .top:hover:after {
+  animation: line_hover 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+}
+.accordion .content {
+  display: none;
+  padding: 0 60px 12px 0;
+  position: relative;
+  z-index: 1;
+}
+.accordion.open {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom-color: #00994E;
+}
+.accordion.open .top .arrow:before {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.accordion.open .top .arrow:after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.accordion.open .arrow {
+  border-color: #00994E;
+}
+.accordion.open .arrow:before,
+.accordion.open .arrow:after {
+  background: #00994E;
+}
+.accordion .text *:last-child {
+  margin-bottom: 0;
+}
+.accordion .line_hover:after {
+  background: #ffafcf;
+}
+.accordion .line_hover:after {
+  animation: line_hover_out 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+}
+.accordion .top:hover .line_hover:after {
+  animation: line_hover_in 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+}
+.accordion .content,
+.accordion h5 {
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  letter-spacing: 0!important;
+}
