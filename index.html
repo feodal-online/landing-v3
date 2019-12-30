@@ -29,15 +29,16 @@
 <body>
 
 <!--Youtube popup start -->
-<div id="myPopup" class="popup">
+<!--Start disable-->
+<!--<div id="myPopup" class="popup">-->
 
-    <div id="videopopup" class="popuptext">
-        <div id="pauseYoutube" class="popup__close" onclick="youtubepopup(); toggleVideo('hide');">X</div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/rNswnWM0MAY?enablejsapi=1" frameborder="0"
-                allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen id="Youtube"></iframe>
-    </div>
-    <div class="popup-overlay" onclick="youtubepopup(); toggleVideo('hide');"></div>
-</div>
+<!--    <div id="videopopup" class="popuptext">-->
+<!--        <div id="pauseYoutube" class="popup__close" onclick="youtubepopup(); toggleVideo('hide');">X</div>-->
+<!--        <iframe width="560" height="315" src="https://www.youtube.com/embed/rNswnWM0MAY?enablejsapi=1" frameborder="0"-->
+<!--                allow="accelerometer; encrypted-media; gyroscope;" allowfullscreen id="Youtube"></iframe>-->
+<!--    </div>-->
+<!--    <div class="popup-overlay" onclick="youtubepopup(); toggleVideo('hide');"></div>-->
+<!--</div>-->
 <!-- Youtube popup end -->
 
 <header>
@@ -57,12 +58,13 @@
                 </ol>
             </nav>
             <div class="rightBlock">
-                <div class="langBlock">
-                    <ul>
-                        <li><a class="line_hover center" href="#">ENG</a></li>
-                        <li><a class="line_hover center active" href="/">УКР</a></li>
-                    </ul>
-                </div>
+<!--Start disable-->
+<!--                <div class="langBlock">-->
+<!--                    <ul>-->
+<!--                        <li><a class="line_hover center" href="#">ENG</a></li>-->
+<!--                        <li><a class="line_hover center active" href="/">УКР</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
                 <a href="https://feodal.online/monitor/login/" target="_blank" class="loginBtn mainBtn">Вхід</a>
             </div>
             <div class="menu-btn">
@@ -198,160 +200,161 @@
             </div>
             <!--  Video btn start         -->
 
-            <a class="presentationBtn" href="javascript:void(0);" onclick="youtubepopup()">
-                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="hover" opacity="0.05"
-                          d="M17.128 3.25562C9.45887 3.25562 3.25586 9.45862 3.25586 17.1278C3.25586 24.797 9.45887 31 17.128 31C24.7972 31 31.0002 24.797 31.0002 17.1278C31.0002 9.45862 24.7972 3.25562 17.128 3.25562Z"
-                          fill="white"/>
-                    <path class="hover" opacity="0.05"
-                          d="M13.3682 12.7292V22.5037C13.3682 22.9548 13.8569 23.2556 14.2328 23.03L22.6915 18.1428C23.0674 17.9172 23.0674 17.3533 22.6915 17.1277L14.2328 12.2029C13.8569 11.9774 13.3682 12.2781 13.3682 12.7292Z"
-                          fill="white" stroke="white" stroke-miterlimit="10"/>
-                    <path opacity="0.05"
-                          d="M16.3761 2.50366C8.70691 2.50366 2.50391 8.70667 2.50391 16.3758C2.50391 24.045 8.70691 30.248 16.3761 30.248C24.0453 30.248 30.2483 24.045 30.2483 16.3758C30.2483 8.70667 24.0453 2.50366 16.3761 2.50366Z"
-                          fill="white"/>
-                    <path class="hover" opacity="0.05"
-                          d="M12.6162 11.9775V21.752C12.6162 22.2031 13.1049 22.5038 13.4809 22.2783L21.9395 17.3911C22.3155 17.1655 22.3155 16.6016 21.9395 16.376L13.4809 11.4512C13.1049 11.2257 12.6162 11.5264 12.6162 11.9775Z"
-                          fill="white" stroke="white" stroke-miterlimit="10"/>
-                    <path opacity="0.05"
-                          d="M15.6241 1.75195C7.95496 1.75195 1.75195 7.95496 1.75195 15.6241C1.75195 23.2933 7.95496 29.4963 15.6241 29.4963C23.2933 29.4963 29.4963 23.2933 29.4963 15.6241C29.4963 7.95496 23.2933 1.75195 15.6241 1.75195Z"
-                          fill="white"/>
-                    <path class="hover" opacity="0.05"
-                          d="M11.8643 11.2256V21C11.8643 21.4511 12.353 21.7519 12.7289 21.5263L21.1876 16.6391C21.5635 16.4135 21.5635 15.8496 21.1876 15.6241L12.7289 10.6993C12.353 10.4737 11.8643 10.7745 11.8643 11.2256Z"
-                          fill="white" stroke="white" stroke-miterlimit="10"/>
-                    <path class="hover" opacity="0.05"
-                          d="M14.8722 1C7.20301 1 1 7.20301 1 14.8722C1 22.5414 7.20301 28.7444 14.8722 28.7444C22.5414 28.7444 28.7444 22.5414 28.7444 14.8722C28.7444 7.20301 22.5414 1 14.8722 1Z"
-                          fill="white"/>
-                    <path class="hover" opacity="0.05"
-                          d="M11.1133 10.4736V20.2481C11.1133 20.6992 11.602 20.9999 11.9779 20.7744L20.4366 15.8872C20.8125 15.6616 20.8125 15.0977 20.4366 14.8721L11.9779 9.94731C11.602 9.72175 11.1133 10.0225 11.1133 10.4736Z"
-                          fill="white" stroke="white" stroke-miterlimit="10"/>
-                    <path d="M14.8722 1C7.20301 1 1 7.20301 1 14.8722C1 22.5414 7.20301 28.7444 14.8722 28.7444C22.5414 28.7444 28.7444 22.5414 28.7444 14.8722C28.7444 7.20301 22.5414 1 14.8722 1Z"
-                          stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                    <path d="M11.1123 10.4736V20.2481C11.1123 20.6992 11.601 20.9999 11.977 20.7744L20.4356 15.8872C20.8116 15.6616 20.8116 15.0977 20.4356 14.8721L11.977 9.94731C11.601 9.72175 11.1123 10.0225 11.1123 10.4736Z"
-                          stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"
-                          stroke-linejoin="round"/>
-                </svg>
+<!--            <a class="presentationBtn" href="javascript:void(0);" onclick="youtubepopup()">-->
+<!--                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M17.128 3.25562C9.45887 3.25562 3.25586 9.45862 3.25586 17.1278C3.25586 24.797 9.45887 31 17.128 31C24.7972 31 31.0002 24.797 31.0002 17.1278C31.0002 9.45862 24.7972 3.25562 17.128 3.25562Z"-->
+<!--                          fill="white"/>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M13.3682 12.7292V22.5037C13.3682 22.9548 13.8569 23.2556 14.2328 23.03L22.6915 18.1428C23.0674 17.9172 23.0674 17.3533 22.6915 17.1277L14.2328 12.2029C13.8569 11.9774 13.3682 12.2781 13.3682 12.7292Z"-->
+<!--                          fill="white" stroke="white" stroke-miterlimit="10"/>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M16.3761 2.50366C8.70691 2.50366 2.50391 8.70667 2.50391 16.3758C2.50391 24.045 8.70691 30.248 16.3761 30.248C24.0453 30.248 30.2483 24.045 30.2483 16.3758C30.2483 8.70667 24.0453 2.50366 16.3761 2.50366Z"-->
+<!--                          fill="white"/>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M12.6162 11.9775V21.752C12.6162 22.2031 13.1049 22.5038 13.4809 22.2783L21.9395 17.3911C22.3155 17.1655 22.3155 16.6016 21.9395 16.376L13.4809 11.4512C13.1049 11.2257 12.6162 11.5264 12.6162 11.9775Z"-->
+<!--                          fill="white" stroke="white" stroke-miterlimit="10"/>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M15.6241 1.75195C7.95496 1.75195 1.75195 7.95496 1.75195 15.6241C1.75195 23.2933 7.95496 29.4963 15.6241 29.4963C23.2933 29.4963 29.4963 23.2933 29.4963 15.6241C29.4963 7.95496 23.2933 1.75195 15.6241 1.75195Z"-->
+<!--                          fill="white"/>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M11.8643 11.2256V21C11.8643 21.4511 12.353 21.7519 12.7289 21.5263L21.1876 16.6391C21.5635 16.4135 21.5635 15.8496 21.1876 15.6241L12.7289 10.6993C12.353 10.4737 11.8643 10.7745 11.8643 11.2256Z"-->
+<!--                          fill="white" stroke="white" stroke-miterlimit="10"/>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M14.8722 1C7.20301 1 1 7.20301 1 14.8722C1 22.5414 7.20301 28.7444 14.8722 28.7444C22.5414 28.7444 28.7444 22.5414 28.7444 14.8722C28.7444 7.20301 22.5414 1 14.8722 1Z"-->
+<!--                          fill="white"/>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M11.1133 10.4736V20.2481C11.1133 20.6992 11.602 20.9999 11.9779 20.7744L20.4366 15.8872C20.8125 15.6616 20.8125 15.0977 20.4366 14.8721L11.9779 9.94731C11.602 9.72175 11.1133 10.0225 11.1133 10.4736Z"-->
+<!--                          fill="white" stroke="white" stroke-miterlimit="10"/>-->
+<!--                    <path d="M14.8722 1C7.20301 1 1 7.20301 1 14.8722C1 22.5414 7.20301 28.7444 14.8722 28.7444C22.5414 28.7444 28.7444 22.5414 28.7444 14.8722C28.7444 7.20301 22.5414 1 14.8722 1Z"-->
+<!--                          stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"-->
+<!--                          stroke-linejoin="round"/>-->
+<!--                    <path d="M11.1123 10.4736V20.2481C11.1123 20.6992 11.601 20.9999 11.977 20.7744L20.4356 15.8872C20.8116 15.6616 20.8116 15.0977 20.4356 14.8721L11.977 9.94731C11.601 9.72175 11.1123 10.0225 11.1123 10.4736Z"-->
+<!--                          stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"-->
+<!--                          stroke-linejoin="round"/>-->
+<!--                </svg>-->
 
-                <span>Відео-інструкція</span>
-            </a>
+<!--                <span>Відео-інструкція</span>-->
+<!--            </a>-->
             <!--  Pop up  -->
 
 
             <!--  Video btn end         -->
 
 
-            <a class="presentationBtn" href="https://drive.google.com/open?id=1zfzYanKO_DtKLhPYS1YSxhDpH4lZGMYg"
-               download
-               target="_blank">
-                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="hover" opacity="0.05"
-                          d="M27.3099 30.9998H7.06392C5.02516 30.9998 3.37402 29.3487 3.37402 27.3099V7.06392C3.37402 5.02516 5.02516 3.37402 7.06392 3.37402H27.3099C29.3487 3.37402 30.9998 5.02516 30.9998 7.06392V27.3099C30.9998 29.3487 29.3487 30.9998 27.3099 30.9998Z"
-                          fill="white"></path>
-                    <path opacity="0.05"
-                          d="M20.3104 14.9394V8.70007H14.0674V14.9394H11.3018C10.862 14.9394 10.6384 15.4723 10.9515 15.7854L17.187 22.0284L23.4226 15.7854C23.7357 15.4723 23.5121 14.9394 23.0723 14.9394H20.3104Z"
-                          fill="white"></path>
-                    <path opacity="0.05" d="M10.1127 25.3268H24.261" stroke="white" stroke-width="0.75"
-                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path class="hover" opacity="0.05"
-                          d="M27.3099 30.9998H7.06392C5.02516 30.9998 3.37402 29.3487 3.37402 27.3099V7.06392C3.37402 5.02516 5.02516 3.37402 7.06392 3.37402H27.3099C29.3487 3.37402 30.9998 5.02516 30.9998 7.06392V27.3099C30.9998 29.3487 29.3487 30.9998 27.3099 30.9998Z"
-                          fill="white"></path>
-                    <path opacity="0.05"
-                          d="M20.3104 14.9394V8.70007H14.0674V14.9394H11.3018C10.862 14.9394 10.6384 15.4723 10.9515 15.7854L17.187 22.0284L23.4226 15.7854C23.7357 15.4723 23.5121 14.9394 23.0723 14.9394H20.3104Z"
-                          fill="white"></path>
-                    <path opacity="0.05" d="M10.1127 25.3268H24.261" stroke="white" stroke-width="0.75"
-                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path class="hover" opacity="0.05"
-                          d="M26.5644 30.2543H6.31844C4.27968 30.2543 2.62854 28.6032 2.62854 26.5644V6.31844C2.62854 4.27968 4.27968 2.62854 6.31844 2.62854H26.5644C28.6032 2.62854 30.2543 4.27968 30.2543 6.31844V26.5644C30.2543 28.6032 28.6032 30.2543 26.5644 30.2543Z"
-                          fill="white"></path>
-                    <path opacity="0.05"
-                          d="M19.5649 14.1939V7.95465H13.3219V14.1939H10.5564C10.1166 14.1939 9.89293 14.7269 10.206 15.04L16.4416 21.283L22.6771 15.04C22.9902 14.7269 22.7666 14.1939 22.3268 14.1939H19.5649Z"
-                          fill="white"></path>
-                    <path opacity="0.05" d="M9.36719 24.5813H23.5155" stroke="white" stroke-width="0.75"
-                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path class="hover" opacity="0.05"
-                          d="M25.8191 29.5089H5.57308C3.53432 29.5089 1.88318 27.8578 1.88318 25.819V5.57302C1.88318 3.53425 3.53432 1.88312 5.57308 1.88312H25.8191C27.8578 1.88312 29.509 3.53425 29.509 5.57302V25.819C29.509 27.8578 27.8578 29.5089 25.8191 29.5089Z"
-                          fill="white"></path>
-                    <path opacity="0.05"
-                          d="M18.8196 13.4485V7.20923H12.5766V13.4485H9.811C9.37119 13.4485 9.14757 13.9815 9.46065 14.2946L15.6962 20.5376L21.9318 14.2946C22.2448 13.9815 22.0212 13.4485 21.5814 13.4485H18.8196Z"
-                          fill="white"></path>
-                    <path opacity="0.05" d="M8.62183 23.8359H22.7702" stroke="white" stroke-width="0.75"
-                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path class="hover" opacity="0.05"
-                          d="M25.0736 28.7635H4.82759C2.78883 28.7635 1.1377 27.1123 1.1377 25.0736V4.82759C1.1377 2.78883 2.78883 1.1377 4.82759 1.1377H25.0736C27.1123 1.1377 28.7635 2.78883 28.7635 4.82759V25.0736C28.7635 27.1123 27.1123 28.7635 25.0736 28.7635Z"
-                          fill="white"></path>
-                    <path opacity="0.05"
-                          d="M18.0741 12.7031V6.46381H11.8311V12.7031H9.06552C8.62571 12.7031 8.40208 13.2361 8.71516 13.5492L14.9507 19.7922L21.1863 13.5492C21.4994 13.2361 21.2757 12.7031 20.8359 12.7031H18.0741Z"
-                          fill="white"></path>
-                    <path opacity="0.05" d="M7.87634 23.0905H22.0247" stroke="white" stroke-width="0.75"
-                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <path
-                            d="M25.0736 28.7635H4.82759C2.78883 28.7635 1.1377 27.1123 1.1377 25.0736V4.82759C1.1377 2.78883 2.78883 1.1377 4.82759 1.1377H25.0736C27.1123 1.1377 28.7635 2.78883 28.7635 4.82759V25.0736C28.7635 27.1123 27.1123 28.7635 25.0736 28.7635Z"
-                            stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    <path
-                            d="M18.0741 12.7031V6.46381H11.8311V12.7031H9.06552C8.62571 12.7031 8.40208 13.2361 8.71516 13.5492L14.9507 19.7922L21.1863 13.5492C21.4994 13.2361 21.2757 12.7031 20.8359 12.7031H18.0741V12.7031Z"
-                            stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
-                    <path d="M7.87634 23.0905H22.0247" stroke="white" stroke-width="0.75" stroke-miterlimit="10"
-                          stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-                <span>Презентація</span>
-            </a>
+<!--            <a class="presentationBtn" href="https://drive.google.com/open?id=1zfzYanKO_DtKLhPYS1YSxhDpH4lZGMYg"-->
+<!--               download-->
+<!--               target="_blank">-->
+<!--                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M27.3099 30.9998H7.06392C5.02516 30.9998 3.37402 29.3487 3.37402 27.3099V7.06392C3.37402 5.02516 5.02516 3.37402 7.06392 3.37402H27.3099C29.3487 3.37402 30.9998 5.02516 30.9998 7.06392V27.3099C30.9998 29.3487 29.3487 30.9998 27.3099 30.9998Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M20.3104 14.9394V8.70007H14.0674V14.9394H11.3018C10.862 14.9394 10.6384 15.4723 10.9515 15.7854L17.187 22.0284L23.4226 15.7854C23.7357 15.4723 23.5121 14.9394 23.0723 14.9394H20.3104Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05" d="M10.1127 25.3268H24.261" stroke="white" stroke-width="0.75"-->
+<!--                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M27.3099 30.9998H7.06392C5.02516 30.9998 3.37402 29.3487 3.37402 27.3099V7.06392C3.37402 5.02516 5.02516 3.37402 7.06392 3.37402H27.3099C29.3487 3.37402 30.9998 5.02516 30.9998 7.06392V27.3099C30.9998 29.3487 29.3487 30.9998 27.3099 30.9998Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M20.3104 14.9394V8.70007H14.0674V14.9394H11.3018C10.862 14.9394 10.6384 15.4723 10.9515 15.7854L17.187 22.0284L23.4226 15.7854C23.7357 15.4723 23.5121 14.9394 23.0723 14.9394H20.3104Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05" d="M10.1127 25.3268H24.261" stroke="white" stroke-width="0.75"-->
+<!--                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M26.5644 30.2543H6.31844C4.27968 30.2543 2.62854 28.6032 2.62854 26.5644V6.31844C2.62854 4.27968 4.27968 2.62854 6.31844 2.62854H26.5644C28.6032 2.62854 30.2543 4.27968 30.2543 6.31844V26.5644C30.2543 28.6032 28.6032 30.2543 26.5644 30.2543Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M19.5649 14.1939V7.95465H13.3219V14.1939H10.5564C10.1166 14.1939 9.89293 14.7269 10.206 15.04L16.4416 21.283L22.6771 15.04C22.9902 14.7269 22.7666 14.1939 22.3268 14.1939H19.5649Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05" d="M9.36719 24.5813H23.5155" stroke="white" stroke-width="0.75"-->
+<!--                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M25.8191 29.5089H5.57308C3.53432 29.5089 1.88318 27.8578 1.88318 25.819V5.57302C1.88318 3.53425 3.53432 1.88312 5.57308 1.88312H25.8191C27.8578 1.88312 29.509 3.53425 29.509 5.57302V25.819C29.509 27.8578 27.8578 29.5089 25.8191 29.5089Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M18.8196 13.4485V7.20923H12.5766V13.4485H9.811C9.37119 13.4485 9.14757 13.9815 9.46065 14.2946L15.6962 20.5376L21.9318 14.2946C22.2448 13.9815 22.0212 13.4485 21.5814 13.4485H18.8196Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05" d="M8.62183 23.8359H22.7702" stroke="white" stroke-width="0.75"-->
+<!--                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>-->
+<!--                    <path class="hover" opacity="0.05"-->
+<!--                          d="M25.0736 28.7635H4.82759C2.78883 28.7635 1.1377 27.1123 1.1377 25.0736V4.82759C1.1377 2.78883 2.78883 1.1377 4.82759 1.1377H25.0736C27.1123 1.1377 28.7635 2.78883 28.7635 4.82759V25.0736C28.7635 27.1123 27.1123 28.7635 25.0736 28.7635Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05"-->
+<!--                          d="M18.0741 12.7031V6.46381H11.8311V12.7031H9.06552C8.62571 12.7031 8.40208 13.2361 8.71516 13.5492L14.9507 19.7922L21.1863 13.5492C21.4994 13.2361 21.2757 12.7031 20.8359 12.7031H18.0741Z"-->
+<!--                          fill="white"></path>-->
+<!--                    <path opacity="0.05" d="M7.87634 23.0905H22.0247" stroke="white" stroke-width="0.75"-->
+<!--                          stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>-->
+<!--                    <path-->
+<!--                            d="M25.0736 28.7635H4.82759C2.78883 28.7635 1.1377 27.1123 1.1377 25.0736V4.82759C1.1377 2.78883 2.78883 1.1377 4.82759 1.1377H25.0736C27.1123 1.1377 28.7635 2.78883 28.7635 4.82759V25.0736C28.7635 27.1123 27.1123 28.7635 25.0736 28.7635Z"-->
+<!--                            stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"-->
+<!--                            stroke-linejoin="round"></path>-->
+<!--                    <path-->
+<!--                            d="M18.0741 12.7031V6.46381H11.8311V12.7031H9.06552C8.62571 12.7031 8.40208 13.2361 8.71516 13.5492L14.9507 19.7922L21.1863 13.5492C21.4994 13.2361 21.2757 12.7031 20.8359 12.7031H18.0741V12.7031Z"-->
+<!--                            stroke="white" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round"-->
+<!--                            stroke-linejoin="round"></path>-->
+<!--                    <path d="M7.87634 23.0905H22.0247" stroke="white" stroke-width="0.75" stroke-miterlimit="10"-->
+<!--                          stroke-linecap="round" stroke-linejoin="round"></path>-->
+<!--                </svg>-->
+<!--                <span>Презентація</span>-->
+<!--            </a>-->
         </div>
     </div>
-    <div class="partnersBlock aos whiteBlock">
-        <div class="container small">
-            <div class="row margin0 nowrap between">
-                <div class="partnersText">
-                    <svg width="18" height="56" viewBox="0 0 18 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.12437e-05 56L0 9.06622e-08L18 0L18 56H2.12437e-05Z" fill="#007940"
-                              fill-opacity="0.1"/>
-                        <path d="M4.00001 52L4 4L14 4L14 52H4.00001Z" fill="#007940" fill-opacity="0.1"/>
-                        <path d="M8 48L8 8L10 8L10 48H8Z" fill="#007940"/>
-                    </svg>
+<!--Start disable-->
+<!--    <div class="partnersBlock aos whiteBlock">-->
+<!--        <div class="container small">-->
+<!--            <div class="row margin0 nowrap between">-->
+<!--                <div class="partnersText">-->
+<!--                    <svg width="18" height="56" viewBox="0 0 18 56" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                        <path d="M2.12437e-05 56L0 9.06622e-08L18 0L18 56H2.12437e-05Z" fill="#007940"-->
+<!--                              fill-opacity="0.1"/>-->
+<!--                        <path d="M4.00001 52L4 4L14 4L14 52H4.00001Z" fill="#007940" fill-opacity="0.1"/>-->
+<!--                        <path d="M8 48L8 8L10 8L10 48H8Z" fill="#007940"/>-->
+<!--                    </svg>-->
 
-                    <h5>Сервісом користуються</h5>
-                </div>
-                <div class="partnersSlider">
-                    <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide partnersItem">
-                                <div class="swiper-lazy-preloader"></div>
-                                <img class="img swiper-lazy"
-                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
-                                     data-src="./img/parters/1.png" alt="parters">
-                            </div>
-                            <div class="swiper-slide partnersItem">
-                                <div class="swiper-lazy-preloader"></div>
-                                <img class="img swiper-lazy"
-                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
-                                     data-src="./img/parters/2.png" alt="parters">
-                            </div>
-                            <div class="swiper-slide partnersItem">
-                                <div class="swiper-lazy-preloader"></div>
-                                <img class="img swiper-lazy"
-                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
-                                     data-src="./img/parters/3.png" alt="parters">
-                            </div>
-                            <div class="swiper-slide partnersItem">
-                                <div class="swiper-lazy-preloader"></div>
-                                <img class="img swiper-lazy"
-                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
-                                     data-src="./img/parters/4.png" alt="parters">
-                            </div>
-                            <div class="swiper-slide partnersItem">
-                                <div class="swiper-lazy-preloader"></div>
-                                <img class="img swiper-lazy"
-                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
-                                     data-src="./img/parters/5.png" alt="parters">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                    <h5>Сервісом користуються</h5>-->
+<!--                </div>-->
+<!--                <div class="partnersSlider">-->
+<!--                    <div class="swiper-container">-->
+<!--                        &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
+<!--                        <div class="swiper-wrapper">-->
+<!--                            <div class="swiper-slide partnersItem">-->
+<!--                                <div class="swiper-lazy-preloader"></div>-->
+<!--                                <img class="img swiper-lazy"-->
+<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
+<!--                                     data-src="./img/parters/1.png" alt="parters">-->
+<!--                            </div>-->
+<!--                            <div class="swiper-slide partnersItem">-->
+<!--                                <div class="swiper-lazy-preloader"></div>-->
+<!--                                <img class="img swiper-lazy"-->
+<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
+<!--                                     data-src="./img/parters/2.png" alt="parters">-->
+<!--                            </div>-->
+<!--                            <div class="swiper-slide partnersItem">-->
+<!--                                <div class="swiper-lazy-preloader"></div>-->
+<!--                                <img class="img swiper-lazy"-->
+<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
+<!--                                     data-src="./img/parters/3.png" alt="parters">-->
+<!--                            </div>-->
+<!--                            <div class="swiper-slide partnersItem">-->
+<!--                                <div class="swiper-lazy-preloader"></div>-->
+<!--                                <img class="img swiper-lazy"-->
+<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
+<!--                                     data-src="./img/parters/4.png" alt="parters">-->
+<!--                            </div>-->
+<!--                            <div class="swiper-slide partnersItem">-->
+<!--                                <div class="swiper-lazy-preloader"></div>-->
+<!--                                <img class="img swiper-lazy"-->
+<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
+<!--                                     data-src="./img/parters/5.png" alt="parters">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="gridInfo first whiteBlock" id='aboutService'>
         <div class="blockTitle">
             <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -655,177 +658,177 @@
             </div>
         </div>
     </div>
-    <div class="faqBlock whiteBlock" id='faq'>
-        <div class="blockTitle">
-            <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="13" width="62" height="13" transform="rotate(90 13 0)" fill="#007940"
-                      fill-opacity="0.1"></rect>
-                <rect x="10" y="3" width="56" height="7" transform="rotate(90 10 3)" fill="#007940" fill-opacity="0.1">
-                </rect>
-                <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"></rect>
-            </svg>
-            <span>СХЕМА Роботи</span>
-        </div>
-        <div class="container">
-            <div class="row">
-                <h2>Відповіді<br> на популярні запитання</h2>
-                <div class="accordionsWrap">
+<!--    <div class="faqBlock whiteBlock" id='faq'>-->
+<!--        <div class="blockTitle">-->
+<!--            <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                <rect x="13" width="62" height="13" transform="rotate(90 13 0)" fill="#007940"-->
+<!--                      fill-opacity="0.1"></rect>-->
+<!--                <rect x="10" y="3" width="56" height="7" transform="rotate(90 10 3)" fill="#007940" fill-opacity="0.1">-->
+<!--                </rect>-->
+<!--                <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"></rect>-->
+<!--            </svg>-->
+<!--            <span>СХЕМА Роботи</span>-->
+<!--        </div>-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <h2>Відповіді<br> на популярні запитання</h2>-->
+<!--                <div class="accordionsWrap">-->
 
-                    <div class="accordion">
-                        <div class="top">
-                            <div class="arrow"></div>
-                            <h5 class="h2">Що таке група моніторингу кадстрових номерів і як її створити?</h5>
-                        </div>
-                        <div class="content__video">
-                            <iframe width="560" height="400" src="https://www.youtube.com/embed/rNswnWM0MAY"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="accordion">
-                        <div class="top">
-                            <div class="arrow"></div>
-                            <h5 class="h2">Моніторинг, порівняння та оновлення відомостей по групі моніторингу з різною
-                                періодичністю</h5>
-                        </div>
-                        <div class="content text">
-                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь
-                                на
-                                запитання яке потребує відповіді</p>
-                        </div>
-                    </div>
-                    <div class="accordion">
-                        <div class="top">
-                            <div class="arrow"></div>
-                            <h5 class="h2">Візуалізований результат моніторингу, експорт та як провести обмін з
-                                конкурентом без зайвих розмов?</h5>
-                        </div>
-                        <div class="content text">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime.</p>
-                        </div>
-                    </div>
-                    <div class="accordion">
-                        <div class="top">
-                            <div class="arrow"></div>
-                            <h5 class="h2">Як швидко та автоматизовано підготувати інформацію для Аграрної
-                                розписки?</h5>
-                        </div>
-                        <div class="content text">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit saepe expedita
-                                ipsam
-                                sed accusamus officiis odit dolorem eaque ex sequi.</p>
-                        </div>
-                    </div>
-                    <!--
-                                        <div class="accordion">
-                                            <div class="top">
-                                                <div class="arrow"></div>
-                                                <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                            </div>
-                                            <div class="content text">
-                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsa ad deserunt!</p>
-                                            </div>
-                                        </div>
-                                        <div class="accordion">
-                                            <div class="top">
-                                                <div class="arrow"></div>
-                                                <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                            </div>
-                                            <div class="content text">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, obcaecati quos? Vero
-                                                    necessitatibus, alias distinctio vitae impedit similique cum molestiae quo facere pariatur
-                                                    ut ex? Debitis dicta officiis est mollitia, doloremque illum quis, veritatis ipsum omnis et
-                                                    suscipit architecto eum.</p>
-                                            </div>
-                                        </div>
-                                        <div class="accordion">
-                                            <div class="top">
-                                                <div class="arrow"></div>
-                                                <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                            </div>
-                                            <div class="content text">
-                                                <p>Lorem ipsum dolor sit.</p>
-                                            </div>
-                                        </div>
-                    -->
-                </div>
-                <!--
-                                <div class="hidden accordionsMainBlock">
-                                    <div class="accordion">
-                                        <div class="top">
-                                            <div class="arrow"></div>
-                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                        </div>
-                                        <div class="content text">
-                                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь
-                                                на
-                                                запитання яке потребує відповіді</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion">
-                                        <div class="top">
-                                            <div class="arrow"></div>
-                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                        </div>
-                                        <div class="content text">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a minus dolore aliquam ad
-                                                dolores.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion">
-                                        <div class="top">
-                                            <div class="arrow"></div>
-                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                        </div>
-                                        <div class="content text">
-                                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь
-                                                на
-                                                запитання яке потребує відповіді</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion">
-                                        <div class="top">
-                                            <div class="arrow"></div>
-                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                        </div>
-                                        <div class="content text">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a minus dolore aliquam ad
-                                                dolores.</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion">
-                                        <div class="top">
-                                            <div class="arrow"></div>
-                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                        </div>
-                                        <div class="content text">
-                                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь
-                                                на
-                                                запитання яке потребує відповіді</p>
-                                        </div>
-                                    </div>
-                                    <div class="accordion">
-                                        <div class="top">
-                                            <div class="arrow"></div>
-                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>
-                                        </div>
-                                        <div class="content text">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a minus dolore aliquam ad
-                                                dolores.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="showMoreFaq aos" onclick="showMoreFaq();">
-                                    <span>Показати більше</span>
-                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1L7 6L13 1" stroke="#1A5632" />
-                                    </svg>
-                                </div>
-                -->
-            </div>
-        </div>
-    </div>
+<!--                    <div class="accordion">-->
+<!--                        <div class="top">-->
+<!--                            <div class="arrow"></div>-->
+<!--                            <h5 class="h2">Що таке група моніторингу кадстрових номерів і як її створити?</h5>-->
+<!--                        </div>-->
+<!--                        <div class="content__video">-->
+<!--                            <iframe width="560" height="400" src="https://www.youtube.com/embed/rNswnWM0MAY"-->
+<!--                                    frameborder="0"-->
+<!--                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                                    allowfullscreen></iframe>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="accordion">-->
+<!--                        <div class="top">-->
+<!--                            <div class="arrow"></div>-->
+<!--                            <h5 class="h2">Моніторинг, порівняння та оновлення відомостей по групі моніторингу з різною-->
+<!--                                періодичністю</h5>-->
+<!--                        </div>-->
+<!--                        <div class="content text">-->
+<!--                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь-->
+<!--                                на-->
+<!--                                запитання яке потребує відповіді</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="accordion">-->
+<!--                        <div class="top">-->
+<!--                            <div class="arrow"></div>-->
+<!--                            <h5 class="h2">Візуалізований результат моніторингу, експорт та як провести обмін з-->
+<!--                                конкурентом без зайвих розмов?</h5>-->
+<!--                        </div>-->
+<!--                        <div class="content text">-->
+<!--                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="accordion">-->
+<!--                        <div class="top">-->
+<!--                            <div class="arrow"></div>-->
+<!--                            <h5 class="h2">Як швидко та автоматизовано підготувати інформацію для Аграрної-->
+<!--                                розписки?</h5>-->
+<!--                        </div>-->
+<!--                        <div class="content text">-->
+<!--                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit saepe expedita-->
+<!--                                ipsam-->
+<!--                                sed accusamus officiis odit dolorem eaque ex sequi.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash;-->
+<!--                                        <div class="accordion">-->
+<!--                                            <div class="top">-->
+<!--                                                <div class="arrow"></div>-->
+<!--                                                <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                            </div>-->
+<!--                                            <div class="content text">-->
+<!--                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsa ad deserunt!</p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="accordion">-->
+<!--                                            <div class="top">-->
+<!--                                                <div class="arrow"></div>-->
+<!--                                                <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                            </div>-->
+<!--                                            <div class="content text">-->
+<!--                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, obcaecati quos? Vero-->
+<!--                                                    necessitatibus, alias distinctio vitae impedit similique cum molestiae quo facere pariatur-->
+<!--                                                    ut ex? Debitis dicta officiis est mollitia, doloremque illum quis, veritatis ipsum omnis et-->
+<!--                                                    suscipit architecto eum.</p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="accordion">-->
+<!--                                            <div class="top">-->
+<!--                                                <div class="arrow"></div>-->
+<!--                                                <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                            </div>-->
+<!--                                            <div class="content text">-->
+<!--                                                <p>Lorem ipsum dolor sit.</p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                    &ndash;&gt;-->
+<!--                </div>-->
+<!--                &lt;!&ndash;-->
+<!--                                <div class="hidden accordionsMainBlock">-->
+<!--                                    <div class="accordion">-->
+<!--                                        <div class="top">-->
+<!--                                            <div class="arrow"></div>-->
+<!--                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                        </div>-->
+<!--                                        <div class="content text">-->
+<!--                                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь-->
+<!--                                                на-->
+<!--                                                запитання яке потребує відповіді</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="accordion">-->
+<!--                                        <div class="top">-->
+<!--                                            <div class="arrow"></div>-->
+<!--                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                        </div>-->
+<!--                                        <div class="content text">-->
+<!--                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a minus dolore aliquam ad-->
+<!--                                                dolores.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="accordion">-->
+<!--                                        <div class="top">-->
+<!--                                            <div class="arrow"></div>-->
+<!--                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                        </div>-->
+<!--                                        <div class="content text">-->
+<!--                                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь-->
+<!--                                                на-->
+<!--                                                запитання яке потребує відповіді</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="accordion">-->
+<!--                                        <div class="top">-->
+<!--                                            <div class="arrow"></div>-->
+<!--                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                        </div>-->
+<!--                                        <div class="content text">-->
+<!--                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a minus dolore aliquam ad-->
+<!--                                                dolores.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="accordion">-->
+<!--                                        <div class="top">-->
+<!--                                            <div class="arrow"></div>-->
+<!--                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                        </div>-->
+<!--                                        <div class="content text">-->
+<!--                                            <p>Відповідь на запитання яке потребує відповіді запитання яке потребує відповіді Відповідь-->
+<!--                                                на-->
+<!--                                                запитання яке потребує відповіді</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="accordion">-->
+<!--                                        <div class="top">-->
+<!--                                            <div class="arrow"></div>-->
+<!--                                            <h5 class="h2">Запитання яке потребує відповіді запитання яке потребує відповіді</h5>-->
+<!--                                        </div>-->
+<!--                                        <div class="content text">-->
+<!--                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, a minus dolore aliquam ad-->
+<!--                                                dolores.</p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="showMoreFaq aos" onclick="showMoreFaq();">-->
+<!--                                    <span>Показати більше</span>-->
+<!--                                    <svg width="14" height="7" viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+<!--                                        <path d="M1 1L7 6L13 1" stroke="#1A5632" />-->
+<!--                                    </svg>-->
+<!--                                </div>-->
+<!--                &ndash;&gt;-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 <footer>
     <div class="container aos">
@@ -848,7 +851,7 @@
                 <li><a class="line_hover center" href="#advantages">Переваги</a></li>
                 <li><a class="line_hover center" href="#about">Про нас</a></li>
                 <li><a class="line_hover center" href="#price">Вартість</a></li>
-                <li><a class="line_hover center" href="#faq">Відповіді</a></li>
+<!--                <li><a class="line_hover center" href="#faq">Відповіді</a></li>-->
             </ol>
         </nav>
         <div class="row second margin0">
