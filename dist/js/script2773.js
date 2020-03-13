@@ -207,7 +207,7 @@ $(".contactForm, .regForm").submit(function (a) {
 });
 var navSections, headerNav, headerNavIndex;
 $(document).ready(function () {
-    headerNav = $("header nav a"), $("header nav a").each(function (a) {
+    headerNav = $("header nav a.section"), $("header nav a.section").each(function (a) {
         var b = $(this).attr("href");
         navSections = a ? navSections.add($(b)) : $(b)
     }), $(window).scroll(function () {

@@ -1,7 +1,7 @@
 let navSections, headerNav, headerNavIndex;
 $(document).ready(function () {
-    headerNav = $("header nav a");
-    $("header nav a").each(function (i) {
+    headerNav = $("header nav a.section");
+    $("header nav a.section").each(function (i) {
         const href = $(this).attr("href");
         !i ? navSections = $(href) : navSections = navSections.add($(href));
     });
