@@ -2028,6 +2028,7 @@ blockquote:before {
   padding: 23px 60px 49px;
   position: relative;
   z-index: 5;
+  margin-bottom: 47px;
 }
 .priceItem .title {
   color: #00994E;
@@ -2098,6 +2099,9 @@ blockquote:before {
 }
 .priceItem.trial .text ul li {
   color: #0B0B0B;
+}
+.priceItem.additional {
+  margin-left: 47px;
 }
 .topRow {
   margin-bottom: 114px;

@@ -2967,7 +2967,8 @@ blockquote:before {
     background: #103820;
     padding: 23px 60px 49px;
     position: relative;
-    z-index: 5
+    z-index: 5;
+    margin-bottom: 47px;
 }
 
 .priceItem .title {
@@ -3053,7 +3054,9 @@ blockquote:before {
 .priceItem.trial .text ul li {
     color: #0b0b0b
 }
-
+.priceItem.additional {
+    margin-left: 47px;
+}
 .topRow {
     margin-bottom: 114px
 }
@@ -6649,6 +6652,9 @@ header {
         left: 1.7vw;
         right: 1.7vw
     }
+    .priceItem.additional {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width:1240px) and (min-width:1160px) {
@@ -6793,7 +6799,11 @@ header {
         margin-left: auto;
         max-width: 70%
     }
+    .priceItem.base {
+        margin-bottom: 0;
+    }
 }
+
 
 @media screen and (max-width:768px) {
 
