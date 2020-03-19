@@ -481,6 +481,9 @@
 @media screen and (max-width: 1340px) {
 }
 @media screen and (max-width: 1240px) {
+  .priceItem.additional {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 1140px) {
 }
@@ -1171,6 +1174,9 @@
   .priceItem {
     margin-bottom: 47px;
     padding-bottom: 41px;
+  }
+  .priceItem.base {
+    margin-bottom: 0;
   }
   .priceItem:last-child {
     margin-bottom: 0;
