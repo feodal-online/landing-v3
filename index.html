@@ -15,6 +15,7 @@
     <meta property="og:image" content="http://feodal.redlab.site/img/logoPNG.png"/>
     <!-- open graph -->
     <!-- favicon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
@@ -56,7 +57,7 @@
                     <li><a class="line_hover center section" href="#about">Про нас</a></li>
                     <li><a class="line_hover center section" href="#price">Вартість</a></li>
                     <li><a class="line_hover center" href="https://agroregisters.com.ua/" target="_blank">Аграрні розписки</a></li>
-                    <li><a class="line_hover center" href="https://feodal.online/monitor/" target="_blank">Вхід</a></li>
+                    <li class="d-lg-none"><a class="line_hover center" href="https://feodal.online/monitor/" target="_blank">Вхід</a></li>
                 </ol>
             </nav>
             <div class="rightBlock">
@@ -388,6 +389,74 @@
             </div>
         </div>
     </div>
+    <div class="priceBlock whiteText fullHeight" id='price'>
+        <div class="blockTitle">
+            <svg width="14" height="62" viewBox="0 0 14 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10.002" y="3" width="56" height="7" transform="rotate(90 10.002 3)" fill="white"
+                      fill-opacity="0.1"/>
+                <rect x="13.002" width="62" height="13" transform="rotate(90 13.002 0)" fill="white"
+                      fill-opacity="0.1"/>
+                <rect x="7.00208" y="6" width="50" height="1" transform="rotate(90 7.00208 6)" fill="white"/>
+            </svg>
+            <span>вартість</span>
+        </div>
+        <img class="bgImg lazy"
+             src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
+             data-src="./img/priceBG.jpg" data-srcret="/img/priceBG@2x.jpg" alt="advantages">
+        <div class="container">
+            <div class="topRow aos">
+                <h2>Вартість послуг сервісу</h2>
+            </div>
+                <div class="row justifyCenter">
+                    <div class="priceItem base">
+                        <h5 class="title">Базова версія</h5>
+                        <div class="price">
+                            <div class="top"><span>90</span>коп.</div>
+                            за 1 запит
+                        </div>
+                        <div class="text">
+                            <ul>
+                                <li>Моніторинг відомостей з реєстру Держгеокадастру</li>
+                                <li>Порівняння отриманої інформації</li>
+                                <li>Експорт даних в Excel та pdf</li>
+                                <li>Цілодобова підтримка</li>
+                            </ul>
+                        </div>
+                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">зареєструватися</a>
+                    </div>
+                    <div class="priceItem trial">
+                        <h5 class="title">Пробна версія</h5>
+                        <div class="price">
+                            <div class="top"><span>0,0</span>грн</div>
+                            за 1 запит
+                        </div>
+                        <div class="text">
+                            <ul>
+                                <li>15 безкоштовних запитів<br> для отримання відомостей</li>
+                            </ul>
+                        </div>
+                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow bringHover">зареєструватися</a>
+                    </div>
+                    <div class="priceItem additional">
+                        <h5 class="title">Додатковий функціонал</h5>
+                        <div class="price">
+                            <div class="top"><span>4900</span>грн.</div>
+                            на місяць
+                        </div>
+                        <div class="text">
+                            <ul>
+                                <li>Дані з ДРРПНМ Мін'юсту</li>
+                                <li>Отримання актуальних даних на момент запиту</li>
+                                <li>1000 запитів на місяць</li>
+                                <li>Візуалізація земельного банку</li>
+                            </ul>
+                        </div>
+                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">зареєструватися</a>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
     <div class="gridInfo reverce second whiteText fullHeight hasBG" id='services'>
         <div class="blockTitle">
             <svg width="14" height="62" viewBox="0 0 14 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -607,74 +676,6 @@
                         </blockquote>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="priceBlock whiteText fullHeight" id='price'>
-        <div class="blockTitle">
-            <svg width="14" height="62" viewBox="0 0 14 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="10.002" y="3" width="56" height="7" transform="rotate(90 10.002 3)" fill="white"
-                      fill-opacity="0.1"/>
-                <rect x="13.002" width="62" height="13" transform="rotate(90 13.002 0)" fill="white"
-                      fill-opacity="0.1"/>
-                <rect x="7.00208" y="6" width="50" height="1" transform="rotate(90 7.00208 6)" fill="white"/>
-            </svg>
-            <span>вартість</span>
-        </div>
-        <img class="bgImg lazy"
-             src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
-             data-src="./img/priceBG.jpg" data-srcret="/img/priceBG@2x.jpg" alt="advantages">
-        <div class="container">
-            <div class="topRow aos">
-                <h2>Вартість послуг сервісу</h2>
-            </div>
-                <div class="row justifyCenter">
-                    <div class="priceItem base">
-                        <h5 class="title">Базова версія</h5>
-                        <div class="price">
-                            <div class="top"><span>90</span>коп.</div>
-                            за 1 запит
-                        </div>
-                        <div class="text">
-                            <ul>
-                                <li>Моніторинг відомостей з реєстру Держгеокадастру</li>
-                                <li>Порівняння отриманої інформації</li>
-                                <li>Експорт даних в Excel та pdf</li>
-                                <li>Цілодобова підтримка</li>
-                            </ul>
-                        </div>
-                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">зареєструватися</a>
-                    </div>
-                    <div class="priceItem trial">
-                        <h5 class="title">Пробна версія</h5>
-                        <div class="price">
-                            <div class="top"><span>0,0</span>грн</div>
-                            за 1 запит
-                        </div>
-                        <div class="text">
-                            <ul>
-                                <li>15 безкоштовних запитів<br> для отримання відомостей</li>
-                            </ul>
-                        </div>
-                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow bringHover">зареєструватися</a>
-                    </div>
-                    <div class="priceItem additional">
-                        <h5 class="title">Додатковий функціонал</h5>
-                        <div class="price">
-                            <div class="top"><span>4900</span>грн.</div>
-                            на місяць
-                        </div>
-                        <div class="text">
-                            <ul>
-                                <li>Дані з ДРРПНМ Мін'юсту</li>
-                                <li>Отримання актуальних даних на момент запиту</li>
-                                <li>1000 запитів на місяць</li>
-                                <li>Візуалізація земельного банку</li>
-                            </ul>
-                        </div>
-                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">зареєструватися</a>
-                    </div>
-                
             </div>
         </div>
     </div>
