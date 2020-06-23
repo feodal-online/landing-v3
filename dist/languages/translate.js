@@ -161,17 +161,16 @@ let languages = {
 }
 
 $(document).ready(function() {
-    var lang = "ukr";
-    $(".lang").each(function(index, element) {
+    let lang = "ukr";
+    $(".lang").each(function() {
       $(this).text(languages[lang][$(this).attr("key")]);
     });
   });
-  
-  // get/set the selected language
+
   $(".translate").click(function() {
-    var lang = $(this).attr("id");
+    let lang = $(this).attr("id");
   
-    $(".lang").each(function(index, element) {
+    $(".lang").each(function() {
       $(this).text(languages[lang][$(this).attr("key")]);
     });
   });
