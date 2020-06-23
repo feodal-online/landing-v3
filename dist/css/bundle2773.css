@@ -2112,6 +2112,10 @@ header .rightBlock {
     justify-content: flex-end
 }
 
+header .burger_menu_only {
+    display: none;
+}
+
 header.small {
     background: rgba(0, 0, 0, .7)
 }
@@ -3338,6 +3342,11 @@ footer .copy {
     margin-bottom: 19px
 }
 
+.mobile_row nav .language{
+    color: dimgray;
+    cursor: initial;
+}
+
 .mobile_row nav a {
     font-size: 25px;
     color: #000
@@ -4389,6 +4398,10 @@ header {
     header .rightBlock,
     header nav {
         display: none
+    }
+
+    header .burger_menu_only {
+        display: block;
     }
 
     .menu-btn {
