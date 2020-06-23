@@ -6680,6 +6680,11 @@ header {
 }
 
 @media screen and (max-width:1024px) {
+    footer nav ol {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
     .bgLines .line:first-child {
         width: 46px
     }
