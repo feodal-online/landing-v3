@@ -57,7 +57,7 @@
                     <li><a class="line_hover center section lang" href="#price" key="cost">Вартість</a></li>
                     <li><a class="line_hover center section lang" id='navA' href="#services" key="services">Послуги</a></li>
                     <li><a class="line_hover center section lang" href="#advantages" key="advantages">Переваги</a></li>
-                    <li><a class="line_hover center section lang" href="#about" key="about">Про нас</a></li>
+                    <li><a class="line_hover center lang" href="blocks/about.html" target="_blank" key="about">Про нас</a></li>
                     <li><a class="line_hover center lang" href="https://agroregisters.com.ua/" target="_blank" key="agroregister">Аграрні розписки</a></li>
                     <li class="burger_menu_only">
                         <a class="line_hover center lang" href="https://feodal.online/monitor/" target="_blank" key="login">Вхід</a>
@@ -491,11 +491,11 @@
                         <h2 class="lang" key="control">Контроль<br>
                             та спостереження</h2>
                         <ul>
-                            <li class="lang" key="audit">Аудит Власного земельного банку</li>
-                            <li class="lang" key="check">Перевірка роботи підлеглих</li>
-                            <li class="lang" key="observation">Спостереження за земельними банками конкурентів</li>
-                            <li class="lang" key="changes">Контроль зміни власників земельних ділянок</li>
-                            <li class="lang" key="map-visualisation">Візуалізація ділянок на карті</li>
+                            <li><a href="blocks/audit.html" target="_blank"class="lang" key="audit">Аудит Власного земельного банку</a></li>
+                            <li><a href="blocks/check.html" target="_blank" class="lang" key="check">Перевірка роботи підлеглих</a></li>
+                            <li><a href="blocks/observation.html" target="_blank" class="lang" key="observation">Спостереження за земельними банками конкурентів</a></li>
+                            <li><a href="blocks/changes.html" target="_blank" class="lang" key="changes">Контроль зміни власників земельних ділянок</a></li>
+                            <li><a href="blocks/map-visualisation.html" target="_blank" class="lang" key="map-visualisation">Візуалізація ділянок на карті</a></li>
                         </ul>
                         <div class="mainBtnWrap">
                             <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow lang" key="try-free">спробувати
@@ -883,7 +883,7 @@
                 <li><a class="line_hover center lang" href="#about" key="about">Про нас</a></li>
                 <li><a class="line_hover center lang" href="#price" key="cost">Вартість</a></li>
                 <li><a class="line_hover center lang" href="https://agroregisters.com.ua/" target="_blank" key="agroregister">Аграрні розписки</a></li>
-                <li><a class="line_hover center lang" href="#" key="cadastral-map">Кадастрова карта</a></li>
+                <li><a class="line_hover center lang" href="blocks/cadastral.html" target="_blank" key="cadastral-map">Кадастрова карта</a></li>
                 <!--                <li><a class="line_hover center" href="#faq">Відповіді</a></li>-->
             </ol>
         </nav>
@@ -982,6 +982,8 @@
                 </a>
             </div>
             <div class="middle">
+                <a href="javascript:void(0);" class="phoneNumber line_hover columnTitle"
+                onclick="copyPhone('+380986148954');">+380986148954</a>
                 <a href="javascript:void(0);" class="copyMail line_hover columnTitle"
                    onclick="copyMail('info@feodal.online')">info@feodal.online</a>
                 <a href="mailto:info@feodal.online" target="_blank" class="mainBtn big white lang" key="write">Написати нам</a>
@@ -1013,7 +1015,17 @@
                     d="M15.9922 0.78125L5.71875 11.0547L1.96875 7.26562C1.77344 7.10938 1.46094 7.10938 1.30469 7.26562L0.171875 8.39844C0.015625 8.55469 0.015625 8.86719 0.171875 9.0625L5.40625 14.2578C5.60156 14.4531 5.875 14.4531 6.07031 14.2578L17.7891 2.53906C17.9453 2.38281 17.9453 2.07031 17.7891 1.875L16.6562 0.78125C16.5 0.585938 16.1875 0.585938 15.9922 0.78125Z"
                     fill="white"/>
         </svg>
-        <span>Пошту скопійовано</span>
+        <span id="popupTitle">Пошту скопійовано</span>
+    </div>
+</div>
+<div class="copyPhonePopup">
+    <div class="mainBtn default">
+        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                    d="M15.9922 0.78125L5.71875 11.0547L1.96875 7.26562C1.77344 7.10938 1.46094 7.10938 1.30469 7.26562L0.171875 8.39844C0.015625 8.55469 0.015625 8.86719 0.171875 9.0625L5.40625 14.2578C5.60156 14.4531 5.875 14.4531 6.07031 14.2578L17.7891 2.53906C17.9453 2.38281 17.9453 2.07031 17.7891 1.875L16.6562 0.78125C16.5 0.585938 16.1875 0.585938 15.9922 0.78125Z"
+                    fill="white"/>
+        </svg>
+        <span>Номер телефону скопійовано</span>
     </div>
 </div>
 

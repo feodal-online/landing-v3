@@ -207,18 +207,20 @@ $(".contactForm, .regForm").submit(function (a) {
 });
 var navSections, headerNav, headerNavIndex;
 $(document).ready(function () {
-    headerNav = $("header nav a.section"), $("header nav a.section").each(function (a) {
-        var b = $(this).attr("href");
-        navSections = a ? navSections.add($(b)) : $(b)
-    }), $(window).scroll(function () {
-        var a = $(window).scrollTop();
-        navSections.each(function (b) {
-            var c = $(this).position().top,
-                d = $(this).innerHeight(),
-                e = a + window_height / 2;
-            return e >= c && e <= c + d ? headerNavIndex != b && (headerNavIndex = b, headerNav.removeClass("active"), headerNav.eq(b).addClass("active"), !1) : void(b == navSections.length - 1 && (headerNavIndex = void 0, headerNav.removeClass("active")))
-        })
-    }).scroll()
+    if ($("header nav a.section") == true) {
+        headerNav = $("header nav a.section"), $("header nav a.section").each(function (a) {
+            var b = $(this).attr("href");
+            navSections = a ? navSections.add($(b)) : $(b)
+        }), $(window).scroll(function () {
+            var a = $(window).scrollTop();
+            navSections.each(function (b) {
+                var c = $(this).position().top,
+                    d = $(this).innerHeight(),
+                    e = a + window_height / 2;
+                return e >= c && e <= c + d ? headerNavIndex != b && (headerNavIndex = b, headerNav.removeClass("active"), headerNav.eq(b).addClass("active"), !1) : void(b == navSections.length - 1 && (headerNavIndex = void 0, headerNav.removeClass("active")))
+            })
+        }).scroll()
+    }
 });
 var popup = {
     hide_popup_timer: void 0,
@@ -551,7 +553,34 @@ function copyMail() {
     }, c / 1e3), setTimeout(function () {
         copyMailAccess = !0
     }, c + animationTime)
+    
 }
+
+function copyPhone() {
+    var a = 0 < arguments.length && arguments[0] !== void 0 ? arguments[0] : "+380986148954";
+    if (!copyMailAccess) return !1;
+    copyMailAccess = !1, copyClipboard(a);
+    var b = "Power2.easeInOut",
+        c = 2e3;
+    animateFromTo(".copyPhonePopup", animationTime / 1e3, {
+        opacity: 0,
+        y: -50,
+        display: "block"
+    }, {
+        opacity: 1,
+        y: 0,
+        ease: b
+    }), animateFromTo(".copyPhonePopup", animationTime / 1e3, {}, {
+        opacity: 0,
+        y: -50,
+        display: "none",
+        ease: b
+    }, c / 1e3), setTimeout(function () {
+        copyMailAccess = !0
+    }, c + animationTime)
+    
+}
+
 var bgLinesClone;
 
 function addBgLines() {

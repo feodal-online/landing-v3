@@ -2460,6 +2460,10 @@ nav a.active {
     padding-top: 64.45%
 }
 
+.gridInfo.second a:hover {
+    color: white;
+}
+
 .gridInfo.third {
     padding-top: 80px
 }
@@ -3272,6 +3276,12 @@ footer .copy {
     line-height: 150%;
     color: #fff
 }
+
+.phoneNumber {
+    color: white;
+    margin-bottom: 10px;
+}
+
 .videoPopup {
     display: table;
     margin: auto;
@@ -3428,7 +3438,7 @@ header.hide nav a {
     font-size: 60px
 }
 
-.copyMailPopup {
+.copyMailPopup, .copyPhonePopup {
     display: none;
     position: fixed;
     left: 0;
