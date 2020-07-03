@@ -552,6 +552,7 @@ function copyMail() {
         copyMailAccess = !0
     }, c + animationTime)
 }
+
 var bgLinesClone;
 
 function addBgLines() {
@@ -617,4 +618,12 @@ $(document).ready(function () {
     })
 });
 
-    
+$(function() {
+    $('.arrowScroll').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#aboutService").offset().top,
+        eaasing: "linear"
+    }, 1500);
+    });
+  });
