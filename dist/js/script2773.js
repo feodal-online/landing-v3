@@ -556,31 +556,6 @@ function copyMail() {
     
 }
 
-function copyPhone() {
-    var a = 0 < arguments.length && arguments[0] !== void 0 ? arguments[0] : "+380986148954";
-    if (!copyMailAccess) return !1;
-    copyMailAccess = !1, copyClipboard(a);
-    var b = "Power2.easeInOut",
-        c = 2e3;
-    animateFromTo(".copyPhonePopup", animationTime / 1e3, {
-        opacity: 0,
-        y: -50,
-        display: "block"
-    }, {
-        opacity: 1,
-        y: 0,
-        ease: b
-    }), animateFromTo(".copyPhonePopup", animationTime / 1e3, {}, {
-        opacity: 0,
-        y: -50,
-        display: "none",
-        ease: b
-    }, c / 1e3), setTimeout(function () {
-        copyMailAccess = !0
-    }, c + animationTime)
-    
-}
-
 var bgLinesClone;
 
 function addBgLines() {
@@ -646,5 +621,13 @@ $(document).ready(function () {
     })
     
 });
-  
-    
+
+$(function() {
+    $('.arrowScroll').on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({
+        scrollTop: $("#aboutService").offset().top,
+        eaasing: "linear"
+    }, 1500);
+    });
+  });
