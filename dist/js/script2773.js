@@ -22,7 +22,7 @@ var header, scroll_top, aboutImg, scrollTopBtn, cursor, screenNow, blockquoteBlo
     production = "localhost" !== window.location.hostname,
     mobMenuOpen = !1,
     copyMailAccess = !0,
-    aosFadeArrDone = [".firstScreen .content > *", ".gridInfo .text > *", ".advantages h2", ".advantagesList li .wrap", ".howWork .text > *", ".howWorkList li", ".aboutBlock .text > *", "blockquote", ".priceItem", ".faqBlock h2", ".accordion"];
+    aosFadeArrDone = [".firstScreen .content > *", ".gridInfo .text > *", ".advantages h2", ".advantagesList li .wrap", ".howWork .text > *", ".howWorkList li", ".aboutBlock .text > *", "blockquote", ".priceItem", ".audit li", ".audit h2", ".helperBlock li", ".helperBlock h2", ".faqBlock h2", ".accordion"];
 isMacLike && $("body, html").addClass("isMacLike"), isSafari && $("body, html").addClass("isSafari");
 var accordionsWrap, accordionsMainBlock, mainBtnSvg = {
         left: "<svg width=\"13\" height=\"14\" viewBox=\"0 0 13 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M1.00006 0.998779V12.9988H13.0001\" stroke=\"#00994E\" stroke-width=\"2\"/>\n    </svg>",
@@ -478,7 +478,7 @@ function scrollTo(a, b) {
 }
 
 function aos_init() {
-    $(".aos").attr("data-aos", "fade-up"), $(aosFadeArrDone.join(",")).addClass("aos").attr("data-aos", "fade-up"), setDelayTransform(".firstScreen .content > *", 0), setDelayTransform(".advantagesList li .wrap", 0), setDelayTransform(".howWorkList li", 0), setDelayTransform(".priceItem", 0), setTimeout(function () {
+    $(".aos").attr("data-aos", "fade-up"), $(aosFadeArrDone.join(",")).addClass("aos").attr("data-aos", "fade-up"), setDelayTransform(".firstScreen .content > *", 0), setDelayTransform(".advantagesList li .wrap", 0), setDelayTransform(".howWorkList li", 0), setDelayTransform(".priceItem", 0), setDelayTransform(".audit li .wrap", 0), setDelayTransform(".helperBlock li", 0), setTimeout(function () {
         AOS.init({
             duration: 500,
             once: !0,
@@ -644,6 +644,7 @@ $(document).ready(function () {
             }
         })
     })
+    
 });
-
+  
     

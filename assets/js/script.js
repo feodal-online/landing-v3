@@ -56,7 +56,7 @@ $(document).ready(function () {
 
     // if ($(".blockTitle").length) wrapBlockTitle();
 
-    $(".advantagesList h5, .priceItem h5").each(function () { $(this).prepend(advantagesSVG) });
+    $(".advantagesList h5, .priceItem h5, .audit h5").each(function () { $(this).prepend(advantagesSVG) });
     $(".howWorkList h5").each(function () { $(this).prepend(howWorkListSVG) });
 
     
@@ -323,7 +323,7 @@ function copyMail(text = 'info@feodal.online') {
 let bgLinesClone;
 function addBgLines() {
     $(".wrapper > div, footer").append(bgLines);
-    $(".aboutBlock").append(bgLines);
+    $(".aboutBlock,").append(bgLines);
     bgLinesClone = $(".aboutBlock .bgLines").last();
     bgLinesClone.addClass("clone");
 }
