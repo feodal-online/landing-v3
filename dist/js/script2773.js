@@ -22,7 +22,10 @@ var header, scroll_top, aboutImg, scrollTopBtn, cursor, screenNow, blockquoteBlo
     production = "localhost" !== window.location.hostname,
     mobMenuOpen = !1,
     copyMailAccess = !0,
-    aosFadeArrDone = [".firstScreen .content > *", ".gridInfo .text > *", ".advantages h2", ".advantagesList li .wrap", ".howWork .text > *", ".howWorkList li", ".aboutBlock .text > *", "blockquote", ".priceItem", ".audit li", ".audit h2", ".helperBlock li", ".helperBlock h2", ".faqBlock h2", ".accordion"];
+    aosFadeArrDone = [".firstScreen .content > *", ".gridInfo .text > *", ".advantages h2", ".advantagesList li .wrap", 
+                    ".howWork .text > *", ".howWorkList li", ".aboutBlock .text > *", "blockquote", ".priceItem",
+                     ".audit li", ".audit h2", ".helperBlock li", ".helperBlock h2", ".recomendationBlock li", 
+                     ".recomendationBlock h2", ".contacts", ".faqBlock h2", ".accordion"];
 isMacLike && $("body, html").addClass("isMacLike"), isSafari && $("body, html").addClass("isSafari");
 var accordionsWrap, accordionsMainBlock, mainBtnSvg = {
         left: "<svg width=\"13\" height=\"14\" viewBox=\"0 0 13 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M1.00006 0.998779V12.9988H13.0001\" stroke=\"#00994E\" stroke-width=\"2\"/>\n    </svg>",
@@ -507,9 +510,7 @@ function wrapBlockTitle() {
 function checkSizeAboutImg() {
     aboutImg.width(window.innerWidth - aboutImg.offset().left)
 }
-$(document).ready(function () {
-    aboutImg = $(".aboutImg"), checkSizeAboutImg(), $(window).on("resize.checkSizeAboutImg", checkSizeAboutImg)
-});
+
 
 function initPopupVideo() {
     var a = $("#video_html"),
@@ -626,8 +627,17 @@ $(function() {
     $('.arrowScroll').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({
-        scrollTop: $("#aboutService").offset().top,
+        scrollTop: $(".blockToScroll").offset().top,
         eaasing: "linear"
     }, 1500);
     });
   });
+
+(function() {
+    let langBlock = document.querySelector('.langBlock ul');
+    langBlock.addEventListener('click', (el) => {
+        let active = document.querySelector('.langBlock .active');
+        active.classList.remove('active');
+        el.srcElement.classList.add('active');
+    })
+})()

@@ -305,7 +305,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: #ceffb3 !important
+    border-color: #919290 !important
 }
 
 input::-webkit-input-placeholder,
@@ -2931,7 +2931,7 @@ blockquote:before {
 
 .advantages:before,
 .priceBlock:before,
-.audit:before {
+.recomendationBlock:before {
     content: '';
     position: absolute;
     top: 0;
@@ -2945,15 +2945,14 @@ blockquote:before {
 }
 
 .advantages .bgLines,
-.priceBlock .bgLines,
-.audit .bgLines {
+.priceBlock .bgLines 
+ {
     z-index: 1;
     display: none
 }
 
 .advantages .container,
-.priceBlock .container,
-.audit .container {
+.priceBlock .container {
     z-index: 2
 }
 
@@ -3283,11 +3282,6 @@ footer .copy {
     font-size: 16px;
     line-height: 150%;
     color: #fff
-}
-
-.phoneNumber {
-    color: white;
-    margin-bottom: 10px;
 }
 
 .videoPopup {
@@ -6544,8 +6538,7 @@ header {
 @media screen and (min-width:2200px) {
 
     .advantages:before,
-    .priceBlock:before,
-    .audit:before {
+    .priceBlock:before {
         background: url(../../img/graphic.png) no-repeat center center
     }
 
@@ -6622,8 +6615,7 @@ header {
     }
 
     .advantages:before,
-    .priceBlock:before,
-    .audit:before {
+    .priceBlock:before {
         background-image: url(../../img/background_1366.svg)
     }
 

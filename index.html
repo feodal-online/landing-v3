@@ -64,8 +64,8 @@
                     </li>  
                     <li class="burger_menu_only"><a class="center lang language" href="#" key="language">Оберіть мову</a></li>
                     <div class="d-flex">
-                        <li class="burger_menu_only"><a class="line_hover center active translate mr-2" href="javascript:void(0)" id="ukr">УКР</a></li>
-                        <li class="burger_menu_only"><a class="line_hover center translate" href="javascript:void(0)" id="rus">РУС</a></li>
+                            <li class="burger_menu_only"><a class="line_hover center active translate mr-2" href="javascript:void(0)" language="ukr">УКР</a></li>
+                            <li class="burger_menu_only"><a class="line_hover center translate" href="javascript:void(0)" language="rus">РУС</a></li>
                     </div>
                     
                 </ol>
@@ -73,8 +73,8 @@
             <div class="rightBlock">
                <div class="langBlock">
                    <ul>
-                       <li><a class="line_hover center active translate" href="javascript:void(0)" id="ukr">УКР</a></li>
-                       <li><a class="line_hover center translate" href="javascript:void(0)" id="rus">РУС</a></li>
+                        <li><a class="line_hover center active translate" href="javascript:void(0)" language="ukr">УКР</a></li>
+                        <li><a class="line_hover center translate" href="javascript:void(0)" language="rus">РУС</a></li>
                    </ul>
                </div>
                 <a href="https://feodal.online/monitor/" target="_blank" class="loginBtn mainBtn lang" key="login">Вхід</a>
@@ -370,7 +370,7 @@
             </div>
         </div>
     </div>   -->
-    <div class="gridInfo first whiteBlock" id='aboutService'>
+    <div class="gridInfo first whiteBlock blockToScroll" id='aboutService'>
         <div class="blockTitle">
             <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="13" width="62" height="13" transform="rotate(90 13 0)" fill="#007940" fill-opacity="0.1"/>
@@ -651,7 +651,7 @@
     </div>
     <div class="audit whiteText">
         <img class="bgImg lazy"
-                             data-src='./img/background!!!.jpg' alt="illustration">
+                             data-src='./img/backgroundAudit.jpg' alt="illustration">
         <div class="container bigPadding">
             <div class="row alignCenter">
                 <div class="column col-12 col-md-6">
@@ -1168,10 +1168,5 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 <script>
-    let langBlock = document.querySelector('.langBlock ul');
-    langBlock.addEventListener('click', (el) => {
-        let active = document.querySelector('.langBlock .active');
-        active.classList.remove('active');
-        el.srcElement.classList.add('active');
-    })
+    
 </script>
