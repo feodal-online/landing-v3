@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Аудит земельних ділянок. Перевірка землі. Feodal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0, minimal-ui">
-    <meta name="keywords" content="земельний аудит, перевірка земельних ділянок">
-    <!-- open graph -->
-    <meta property="og:url" content="https://feodal.online/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Аудит земельних ділянок. Перевірка землі. Feodal"/>
-    <meta property="og:description"
-          content="Перевірка земельних ділянок. Відомості про землю та їх власників. Земельний аудит від Feodal"/>
-    <meta property="og:image" content="https://feodal.online/img/feodal.jpg"/>
-    <!-- open graph -->
-    <!-- favicon -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <!-- favicon -->
-    <link rel="stylesheet" href="./dist/css/cssLibs2773.css">
-    <link rel="stylesheet" href="./dist/css/bundle2773.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0, minimal-ui">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Аудит земельних ділянок. Перевірка землі. Feodal</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0, minimal-ui">
+        <meta name="keywords" content="земельний аудит, перевірка земельних ділянок">
+        <!-- open graph -->
+        <meta property="og:url" content="https://feodal.online/"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Аудит земельних ділянок. Перевірка землі. Feodal"/>
+        <meta property="og:description"
+              content="Перевірка земельних ділянок. Відомості про землю та їх власників. Земельний аудит від Feodal"/>
+        <meta property="og:image" content="https://feodal.online/img/feodal.jpg"/>
+        <!-- open graph -->
+        <!-- favicon -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="./img/favicon/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <!-- favicon -->
+        <link rel="stylesheet" href="./dist/css/cssLibs2773.css">
+        <link rel="stylesheet" href="./dist/css/bundle2773.css">
+    </head>
 
 <body>
 
@@ -54,23 +54,30 @@
             </div>
             <nav>
                 <ol>
-                    <li><a class="line_hover center section" href="#price">Вартість</a></li>
-                    <li><a class="line_hover center section" id='navA' href="#services">Послуги</a></li>
-                    <li><a class="line_hover center section" href="#advantages">Переваги</a></li>
-                    <li><a class="line_hover center section" href="#about">Про нас</a></li>
-                    <li><a class="line_hover center" href="https://agroregisters.com.ua/" target="_blank">Аграрні розписки</a></li>
-                    <li class="d-lg-none"><a class="line_hover center" href="https://feodal.online/monitor/" target="_blank">Вхід</a></li>
+                    <li><a class="line_hover center section lang" href="#price" key="cost">Вартість</a></li>
+                    <li><a class="line_hover center section lang" id='navA' href="#services" key="services">Послуги</a></li>
+                    <li><a class="line_hover center section lang" href="#advantages" key="advantages">Переваги</a></li>
+                    <li><a class="line_hover center lang" href="blocks/about.html" target="_blank" key="about">Про нас</a></li>
+                    <li><a class="line_hover center lang" href="https://agroregisters.com.ua/" target="_blank" key="agroregister">Аграрні розписки</a></li>
+                    <li class="burger_menu_only">
+                        <a class="line_hover center lang" href="https://feodal.online/monitor/" target="_blank" key="login">Вхід</a>
+                    </li>  
+                    <li class="burger_menu_only"><a class="center lang language" href="#" key="language">Оберіть мову</a></li>
+                    <div class="d-flex">
+                            <li class="burger_menu_only"><a class="line_hover center active translate mr-2" href="javascript:void(0)" language="ukr">УКР</a></li>
+                            <li class="burger_menu_only"><a class="line_hover center translate" href="javascript:void(0)" language="rus">РУС</a></li>
+                    </div>
+                    
                 </ol>
             </nav>
             <div class="rightBlock">
-<!--Start disable-->
-<!--                <div class="langBlock">-->
-<!--                    <ul>-->
-<!--                        <li><a class="line_hover center" href="#">ENG</a></li>-->
-<!--                        <li><a class="line_hover center active" href="/">УКР</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-                <a href="https://feodal.online/monitor/" target="_blank" class="loginBtn mainBtn">Вхід</a>
+               <div class="langBlock">
+                   <ul>
+                        <li><a class="line_hover center active translate" href="javascript:void(0)" language="ukr">УКР</a></li>
+                        <li><a class="line_hover center translate" href="javascript:void(0)" language="rus">РУС</a></li>
+                   </ul>
+               </div>
+                <a href="https://feodal.online/monitor/" target="_blank" class="loginBtn mainBtn lang" key="login">Вхід</a>
             </div>
             <div class="menu-btn">
                 <div class="line"></div>
@@ -95,14 +102,14 @@
         <div class="container">
             <div class="row margin0 justifyCenter">
                 <div class="content">
-                    <h1>Контролюй<br>
+                    <h1 class="lang" key="jumbontron-title">Контролюй<br>
                         ЗЕМЕЛЬНИЙ БАНК</h1>
-                    <div class="text">
+                    <div class="text lang" key="jumbontron-description">
                         <p>Feodal.Online — автоматизований онлайн-сервіс з отримання та моніторингу відомостей про
                             земельні ділянки</p>
                     </div>
                     <div class="mainBtnWrap">
-                        <!-- <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">спробувати
+                        <!-- <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow lang" key="try-free">спробувати
                             безкоштовно</a> -->
                             <div id="scrollBlock">
                                 <a class="arrowScroll" href="#"><span></span></a>
@@ -310,60 +317,60 @@
         </div>
     </div>
 <!--Start disable-->
-<!--    <div class="partnersBlock aos whiteBlock">-->
-<!--        <div class="container small">-->
-<!--            <div class="row margin0 nowrap between">-->
-<!--                <div class="partnersText">-->
-<!--                    <svg width="18" height="56" viewBox="0 0 18 56" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                        <path d="M2.12437e-05 56L0 9.06622e-08L18 0L18 56H2.12437e-05Z" fill="#007940"-->
-<!--                              fill-opacity="0.1"/>-->
-<!--                        <path d="M4.00001 52L4 4L14 4L14 52H4.00001Z" fill="#007940" fill-opacity="0.1"/>-->
-<!--                        <path d="M8 48L8 8L10 8L10 48H8Z" fill="#007940"/>-->
-<!--                    </svg>-->
+<!-- <div class="partnersBlock aos whiteBlock">
+        <div class="container small">
+            <div class="row margin0 nowrap between">
+                <div class="partnersText">
+                    <svg width="18" height="56" viewBox="0 0 18 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.12437e-05 56L0 9.06622e-08L18 0L18 56H2.12437e-05Z" fill="#007940"
+                              fill-opacity="0.1"/>
+                        <path d="M4.00001 52L4 4L14 4L14 52H4.00001Z" fill="#007940" fill-opacity="0.1"/>
+                        <path d="M8 48L8 8L10 8L10 48H8Z" fill="#007940"/>
+                    </svg>
 
-<!--                    <h5>Сервісом користуються</h5>-->
-<!--                </div>-->
-<!--                <div class="partnersSlider">-->
-<!--                    <div class="swiper-container">-->
-<!--                        &lt;!&ndash; Additional required wrapper &ndash;&gt;-->
-<!--                        <div class="swiper-wrapper">-->
-<!--                            <div class="swiper-slide partnersItem">-->
-<!--                                <div class="swiper-lazy-preloader"></div>-->
-<!--                                <img class="img swiper-lazy"-->
-<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
-<!--                                     data-src="./img/parters/1.png" alt="parters">-->
-<!--                            </div>-->
-<!--                            <div class="swiper-slide partnersItem">-->
-<!--                                <div class="swiper-lazy-preloader"></div>-->
-<!--                                <img class="img swiper-lazy"-->
-<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
-<!--                                     data-src="./img/parters/2.png" alt="parters">-->
-<!--                            </div>-->
-<!--                            <div class="swiper-slide partnersItem">-->
-<!--                                <div class="swiper-lazy-preloader"></div>-->
-<!--                                <img class="img swiper-lazy"-->
-<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
-<!--                                     data-src="./img/parters/3.png" alt="parters">-->
-<!--                            </div>-->
-<!--                            <div class="swiper-slide partnersItem">-->
-<!--                                <div class="swiper-lazy-preloader"></div>-->
-<!--                                <img class="img swiper-lazy"-->
-<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
-<!--                                     data-src="./img/parters/4.png" alt="parters">-->
-<!--                            </div>-->
-<!--                            <div class="swiper-slide partnersItem">-->
-<!--                                <div class="swiper-lazy-preloader"></div>-->
-<!--                                <img class="img swiper-lazy"-->
-<!--                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='-->
-<!--                                     data-src="./img/parters/5.png" alt="parters">-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <div class="gridInfo first whiteBlock" id='aboutService'>
+                    <h5>Сервісом користуються</h5>
+                </div>
+                <div class="partnersSlider">
+                    <div class="swiper-container">
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide partnersItem">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="img swiper-lazy"
+                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
+                                     data-src="./img/parters/1.png" alt="parters">
+                            </div>
+                            <div class="swiper-slide partnersItem">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="img swiper-lazy"
+                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
+                                     data-src="./img/parters/2.png" alt="parters">
+                            </div>
+                            <div class="swiper-slide partnersItem">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="img swiper-lazy"
+                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
+                                     data-src="./img/parters/3.png" alt="parters">
+                            </div>
+                            <div class="swiper-slide partnersItem">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="img swiper-lazy"
+                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
+                                     data-src="./img/parters/4.png" alt="parters">
+                            </div>
+                            <div class="swiper-slide partnersItem">
+                                <div class="swiper-lazy-preloader"></div>
+                                <img class="img swiper-lazy"
+                                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
+                                     data-src="./img/parters/5.png" alt="parters">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   -->
+    <div class="gridInfo first whiteBlock blockToScroll" id='aboutService'>
         <div class="blockTitle">
             <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="13" width="62" height="13" transform="rotate(90 13 0)" fill="#007940" fill-opacity="0.1"/>
@@ -371,7 +378,7 @@
                       fill-opacity="0.1"/>
                 <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"/>
             </svg>
-            <span>ПРО СЕРВІС</span>
+            <span class="lang" key="about-service">ПРО СЕРВІС</span>
         </div>
         <div class="container">
             <div class="row alignCenter">
@@ -384,9 +391,9 @@
                 </div>
                 <div class="column col-12 col-md-6">
                     <div class="text">
-                        <h2>Коротко про сервіс</h2>
-                        <p>Feodal.Online — це персональний помічник, який допоможе контролювати ваш земельний банк.</p>
-                        <p>Все що потрібно - це ввести перелік кадастрових номерів (за їх відсутності просто намалювати
+                        <h2 class="lang" key="service-title">Коротко про сервіс</h2>
+                        <p class="lang" key="service-short-desc">Feodal.Online — це персональний помічник, який допоможе контролювати ваші земельні ділянки та паї.</p>
+                        <p class="lang" key="service-full-desc">Все що потрібно - це ввести перелік кадастрових номерів (за їх відсутності просто намалювати
                             поле на карті), а наш автоматизований сервіс обробить всю необхідну інформацію та подасть її
                             для вас у зручному форматі.</p>
                     </div>
@@ -403,60 +410,60 @@
                       fill-opacity="0.1"/>
                 <rect x="7.00208" y="6" width="50" height="1" transform="rotate(90 7.00208 6)" fill="white"/>
             </svg>
-            <span>вартість</span>
+            <span class="lang" key="cost">вартість</span>
         </div>
         <img class="bgImg lazy"
              src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
              data-src="./img/priceBG.jpg" data-srcret="/img/priceBG@2x.jpg" alt="advantages">
         <div class="container">
             <div class="topRow aos">
-                <h2>Вартість послуг сервісу</h2>
+                <h2 class="lang" key="service-cost">Вартість послуг сервісу</h2>
             </div>
                 <div class="row justifyCenter">
                     <div class="priceItem base">
-                        <h5 class="title">Базова версія</h5>
+                        <h5 class="title lang" key="base-version">Базова версія</h5>
                         <div class="price">
                             <div class="top"><span>90</span>коп.</div>
-                            за 1 запит
+                            <span class="lang" key="per-request">за 1 запит</span>
                         </div>
                         <div class="text">
                             <ul>
-                                <li>Моніторинг відомостей з реєстру Держгеокадастру</li>
-                                <li>Порівняння отриманої інформації</li>
-                                <li>Експорт даних в Excel та pdf</li>
-                                <li>Цілодобова підтримка</li>
+                                <li class="lang" key="monitoring">Моніторинг відомостей з реєстру Держгеокадастру</li>
+                                <li class="lang" key="compare">Порівняння отриманої інформації</li>
+                                <li class="lang" key="export">Експорт даних в Excel та pdf</li>
+                                <li class="lang" key="support">Цілодобова підтримка</li>
                             </ul>
                         </div>
-                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">зареєструватися</a>
+                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow lang" key="sign-up">зареєструватися</a>
                     </div>
                     <div class="priceItem trial">
-                        <h5 class="title">Пробна версія</h5>
+                        <h5 class="title lang" key="trial-version">Пробна версія</h5>
                         <div class="price">
                             <div class="top"><span>0,0</span>грн</div>
-                            за 1 запит
+                            <span class="lang" key="per-request">за 1 запит</span>
                         </div>
                         <div class="text">
                             <ul>
-                                <li>15 безкоштовних запитів<br> для отримання відомостей</li>
+                                <li class="lang" key="free-request">15 безкоштовних запитів<br> для отримання відомостей</li>
                             </ul>
                         </div>
-                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow bringHover">зареєструватися</a>
+                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow bringHover lang" key="sign-up">зареєструватися</a>
                     </div>
                     <div class="priceItem additional">
-                        <h5 class="title">Додатковий функціонал</h5>
+                        <h5 class="title lang" key="additional-version">Додатковий функціонал</h5>
                         <div class="price">
                             <div class="top"><span>4900</span>грн.</div>
-                            на місяць
+                            <span class="lang" key="per-month">на місяць</span>
                         </div>
                         <div class="text">
                             <ul>
-                                <li>Дані з ДРРПНМ Мін'юсту</li>
-                                <li>Отримання актуальних даних на момент запиту</li>
-                                <li>1000 запитів на місяць</li>
-                                <li>Візуалізація земельного банку</li>
+                                <li class="lang" key="drrpnm">Дані з ДРРПНМ Мін'юсту</li>
+                                <li class="lang" key="actual">Отримання актуальних даних на момент запиту</li>
+                                <li class="lang" key="1000-requests">1000 запитів на місяць</li>
+                                <li class="lang" key="visualisation">Візуалізація земельного банку</li>
                             </ul>
                         </div>
-                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">зареєструватися</a>
+                        <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow lang" key="sign-up">зареєструватися</a>
                     </div>
                 
             </div>
@@ -471,7 +478,7 @@
                       fill-opacity="0.1"/>
                 <rect x="7.00208" y="6" width="50" height="1" transform="rotate(90 7.00208 6)" fill="white"/>
             </svg>
-            <span>послуги</span>
+            <span class="lang" key="services">послуги</span>
         </div>
         <div class="container">
             <div class="row alignCenter">
@@ -484,16 +491,17 @@
                 </div>
                 <div class="column col-12 col-md-6">
                     <div class="text">
-                        <h2>Контроль<br>
+                        <h2 class="lang" key="control">Контроль<br>
                             та спостереження</h2>
                         <ul>
-                            <li>Аудит Власного земельного банку</li>
-                            <li>Перевірка роботи підлеглих</li>
-                            <li>Спостереження за земельними банками конкурентів</li>
-                            <li>Контроль зміни власників земельних ділянок</li>
+                            <li><a href="blocks/audit.html" target="_blank"class="lang" key="audit">Аудит Власного земельного банку</a></li>
+                            <li><a href="blocks/check.html" target="_blank" class="lang" key="check">Перевірка роботи підлеглих</a></li>
+                            <li><a href="blocks/observation.html" target="_blank" class="lang" key="observation">Спостереження за земельними банками конкурентів</a></li>
+                            <li><a href="blocks/changes.html" target="_blank" class="lang" key="changes">Контроль зміни власників земельних ділянок</a></li>
+                            <li><a href="blocks/map-visualisation.html" target="_blank" class="lang" key="map-visualisation">Візуалізація ділянок на карті</a></li>
                         </ul>
                         <div class="mainBtnWrap">
-                            <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">спробувати
+                            <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow lang" key="try-free">спробувати
                                 безкоштовно</a>
                         </div>
                     </div>
@@ -509,7 +517,7 @@
                       fill-opacity="0.1"/>
                 <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"/>
             </svg>
-            <span>послуги</span>
+            <span class="lang" key="services">послуги</span>
         </div>
         <div class="container">
             <div class="row alignCenter">
@@ -522,16 +530,17 @@
                 </div>
                 <div class="column col-12 col-md-6">
                     <div class="text">
-                        <h2>Моніторинг<br>
+                        <h2 class="lang" key="monitoring-title">Моніторинг<br>
                             та сповіщення</h2>
                         <ul>
-                            <li>Автоматичне порівння відомостей при моніторингу</li>
-                            <li>Сповіщення після кожного моніторингу</li>
-
+                            <li class="lang" key="monitoring-rights">Моніторинг прав власності на земельні ділянки</li>
+                            <li class="lang" key="control-owners">Контроль за змінами власників земельних ділянок</li>
+                            <li class="lang" key="auto-compare">Автоматичне порівняння відомостей про землю</li>
+                            <li class="lang" key="audit-and-notification">Земельний аудит та сповіщення при зміни відомостей</li>
                         </ul>
                         <div class="mainBtnWrap">
                             <a href="https://feodal.online/monitor/register/"
-                               class="mainBtn big withArrow bringHover">спробувати
+                               class="mainBtn big withArrow bringHover lang" key="try-free">спробувати
                                 безкоштовно</a>
                         </div>
                     </div>
@@ -548,37 +557,37 @@
                       fill-opacity="0.1"/>
                 <rect x="7.00208" y="6" width="50" height="1" transform="rotate(90 7.00208 6)" fill="white"/>
             </svg>
-            <span>переваги</span>
+            <span class="lang" key="advantages">переваги</span>
         </div>
         <img class="bgImg lazy"
              src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Uw8AAn0BfY81YKcAAAAASUVORK5CYII='
              data-src="./img/advantages.jpg" data-srcret="./img/advantages.jpg" alt="advantages">
         <div class="container">
-            <h2>Переваги сервісу</h2>
+            <h2 class="lang" key="service-advantages">Переваги сервісу</h2>
             <ul class="row advantagesList between margin0">
                 <li>
-                    <h5>Самостійність</h5>
-                    <p>Сервіс повністю<br>автоматизований та не потребує залучення сторонніх фахівців</p>
+                    <h5><span class="lang" key="independence">Самостійність</span></h5>
+                    <p class="lang" key="independence-description">Сервіс повністю<br>автоматизований та не потребує залучення сторонніх фахівців</p>
                 </li>
                 <li>
-                    <h5>Зручність</h5>
-                    <p>Візуалізація<br>та збереження даних у зручному форматі</p>
+                    <h5><span class="lang" key="сonvenience">Зручність</span></h5>
+                    <p class="lang" key="сonvenience-visualisation">Візуалізація<br>та збереження даних у зручному форматі</p>
                 </li>
                 <li>
-                    <h5>Автоматизація</h5>
-                    <p>Автоматичне оновлення та наповнення інформації у 1С та ГІС</p>
+                    <h5><span class="lang" key="automation">Автоматизація</span></h5>
+                    <p class="lang" key="automatic-update">Автоматичне оновлення та наповнення інформації у 1С та ГІС</p>
                 </li>
                 <li>
-                    <h5>Доступність</h5>
-                    <p>Зручний та зрозумілий інтерфейс адаптований для всіх пристроїв</p>
+                    <h5><span class="lang" key="accessibility">Доступність</span></h5>
+                    <p class="lang" key="clear-interface">Зручний та зрозумілий інтерфейс адаптований для всіх пристроїв</p>
                 </li>
                 <li>
-                    <h5>Оперативність</h5>
-                    <p>Отримання та підготовка відомостей про ділянки та позики швидко та у великому обсязі</p>
+                    <h5><span class="lang" key="efficiency">Оперативність</span></h5>
+                    <p class="lang" key="obtaining-information">Отримання та підготовка відомостей про ділянки та позики швидко та у великому обсязі</p>
                 </li>
                 <li>
-                    <h5>Підтримка</h5>
-                    <p>Цілодобова підтримка користувачів сервісу </p>
+                    <h5><span class="lang" key="aid">Підтримка</span></h5>
+                    <p class="lang" key="24/7-aid">Цілодобова підтримка користувачів сервісу </p>
                 </li>
             </ul>
         </div>
@@ -592,16 +601,16 @@
                 </rect>
                 <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"></rect>
             </svg>
-            <span>СХЕМА Роботи</span>
+            <span class="lang" key="work-schema">СХЕМА Роботи</span>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-5">
                     <div class="text">
-                        <h2>Як працювати <br>з Feodal.Online</h2>
-                        <p>Від реєстрації до отримання повноцінної інформації про ваші земельні ділянки — всього один
+                        <h2 class="lang" key="how-to-work">Як працювати <br>з Feodal.Online</h2>
+                        <p class="lang" key="work-description-1">Від реєстрації до отримання повноцінної інформації про ваші земельні ділянки — всього один
                             простий крок, який потребує мінімум ваших зусиль.</p>
-                        <p>Сервіс зручний та адаптований для тривалого користування. Знайомтеся з інструкцією,
+                        <p class="lang" key="work-description-2">Сервіс зручний та адаптований для тривалого користування. Знайомтеся з інструкцією,
                             реєструйтеся та користуйтеся всіма даними у повному доступі.</p>
                     </div>
                 </div>
@@ -609,18 +618,18 @@
                     <ul class="howWorkList">
                         <li>
                             <span class="count">01</span>
-                            <h5>Реєстрація<br> у сервісі</h5>
-                            <p>Пройдіть простий процес реєстрації у нашому сервісі</p>
+                            <h5><span class="lang" key="step1-title">Реєстрація<br> у сервісі</span></h5>
+                            <p><span class="lang" key="step1">Пройдіть простий процес реєстрації у нашому сервісі</span></p>
                         </li>
                         <li>
                             <span class="count">02</span>
-                            <h5>Внесення номерів</h5>
-                            <p>Для отримання інформації введіть кадастровий номер</p>
+                            <h5><span class="lang" key="step2-title">Внесення номерів</span></h5>
+                            <p><span class="lang" key="step2">Для отримання інформації введіть кадастровий номер</span></p>
                         </li>
                         <li>
                             <span class="count">03</span>
-                            <h5>Отримання інформації</h5>
-                            <p>Вітаємо! Дані отримано — користуйтеся у своїх цілях</p>
+                            <h5><span class="lang" key="step3-title">Отримання інформації</span></h5>
+                            <p><span class="lang" key="step3">Вітаємо! Дані отримано — користуйтеся у своїх цілях</span></p>
                         </li>
                     </ul>
                 </div>
@@ -631,16 +640,57 @@
         <div class="container bigPadding">
             <div class="row alignCenter aos">
                 <div class="col-12 col-md-8 column">
-                    <h2 class="big">Хто володіє інформацією, той володіє світом</h2>
+                    <h2 class="big lang" key="slogan">Хто володіє інформацією, той володіє світом</h2>
                 </div>
                 <div class="col-12 col-md-4 column">
-                    <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow">спробувати
+                    <a href="https://feodal.online/monitor/register/" class="mainBtn big withArrow lang" key="try-free">спробувати
                         безкоштовно</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="aboutBlock whiteBlock" id='about'>
+    <div class="audit whiteText">
+        <img class="bgImg lazy"
+                             data-src='./img/backgroundAudit.jpg' alt="illustration">
+        <div class="container bigPadding">
+            <div class="row alignCenter">
+                <div class="column col-12 col-md-6">
+                    <div class="text">
+                        <h2 class="lang" key="audit-list-title">Аудит земельної ділянки включає в себе наступні відомості:</h2>
+                        <ul>
+                            <li class="lang" key="audit-list-1">Перевірка цільового призначення земельної ділянки</li>
+                            <li class="lang" key="audit-list-2">Перевірка форми документів</li>
+                            <li class="lang" key="audit-list-3">Історія походження ділянки</li>
+                            <li class="lang" key="audit-list-4">Обмеження та заборони на земельну ділянку</li>
+                            <li class="lang" key="audit-list-5">Відомості про власників землі</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="helperBlock whiteBlock">
+        <div class="triangle"></div>
+        <div class="container bigPadding">
+            <div class="row alignCenter">
+                <div class="column col-12 col-md-6">
+                    
+                </div>
+                <div class="column col-12 col-md-6">
+                    <div class="text">
+                        <h2 class="lang" key="helper-list-title">Сервіс Feodal.Оnline допомагає отримувати і моніторити відомості про земельні ділянки онлайн для:</h2>
+                        <ul>
+                            <li class="lang" key="helper-list-1">Аграріїв</li>
+                            <li class="lang" key="helper-list-2">Фермерських господарств</li>
+                            <li class="lang" key="helper-list-3">Агрохолдингів</li>
+                            <li class="lang" key="helper-list-4">Приватних фермерів</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="aboutBlock whiteBlock" id='about'>
         <div class="blockTitle">
             <svg width="14" height="62" viewBox="0 0 14 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="10.002" y="3" width="56" height="7" transform="rotate(90 10.002 3)" fill="white"
@@ -649,20 +699,20 @@
                       fill-opacity="0.1"/>
                 <rect x="7.00208" y="6" width="50" height="1" transform="rotate(90 7.00208 6)" fill="white"/>
             </svg>
-            <span>про нас</span>
+            <span class="lang" key="about">про нас</span>
         </div>
         <div class="container container_without_padding">
             <div class="row">
                 <div class="col-12 col-md-6 columnLeft">
                     <div class="text">
-                        <h2>Про нашу компанію</h2>
-                        <p>Добридень! Я — Андрій Дем’янович, засновник сервісу Feodal.Online, що почав свою активну
+                        <h2 class="lang" key="about-company-title">Про нашу компанію</h2>
+                        <p class="lang" key="about-company-1">Добридень! Я — Андрій Дем’янович, засновник сервісу Feodal.Online, що почав свою активну
                             діяльність у 2019 році.</p>
-                        <p>Назва FEODAL чітко передає суть нашого задуму, адже феодал — землевласник, що несе
+                        <p class="lang" key="about-company-2"> Назва FEODAL чітко передає суть нашого задуму, адже феодал — землевласник, що несе
                             відповідальність за розквіт своїх володінь. А добрий господар завжди піклується про порядок
                             на своїй землі. Тому, метою нашого проекту є підтримка власників як великого, так і малого
                             земельного банку. </p>
-                        <p>Нас, як представників вітчизняного аграрного бізнесу, завжди хвилювала ситуація земельного
+                        <p class="lang" key="about-company-3">Нас, як представників вітчизняного аграрного бізнесу, завжди хвилювала ситуація земельного
                             банку України. Нашою ціллю, насамперед, є — легкий та прозорий процес отримання інформації
                             та здійснення моніторингу даних земельних ділянок для кожного.</p>
                     </div>
@@ -676,14 +726,14 @@
                     </div>
                     <div class="blockquoteBlock">
                         <blockquote class="whiteText">
-                            <h5>Можете спати спокійно, — Feodal.Online повідомить<br> про загрозу вашим гектарам</h5>
-                            <p>Андрій Дем’янович</p>
+                            <h5 class="lang" key="quote">Можете спати спокійно, — Feodal.Online повідомить<br> про загрозу вашим гектарам</h5>
+                            <p class="lang" key="quote-author">Андрій Дем’янович</p>
                         </blockquote>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 <!--    <div class="faqBlock whiteBlock" id='faq'>-->
 <!--        <div class="blockTitle">-->
 <!--            <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">-->
@@ -872,18 +922,19 @@
         </div>
         <nav>
             <ol>
-                <li><a class="line_hover center" href="#aboutService">Про сервіс</a></li>
-                <li><a class="line_hover center" href="#services">Послуги</a></li>
-                <li><a class="line_hover center" href="#advantages">Переваги</a></li>
-                <li><a class="line_hover center" href="#about">Про нас</a></li>
-                <li><a class="line_hover center" href="#price">Вартість</a></li>
-                <li><a class="line_hover center" href="https://agroregisters.com.ua/" target="_blank">Аграрні розписки</a></li>
-<!--                <li><a class="line_hover center" href="#faq">Відповіді</a></li>-->
+                <li><a class="line_hover center lang" href="#aboutService" key="about-service">Про сервіс</a></li>
+                <li><a class="line_hover center lang" href="#services" key="services">Послуги</a></li>
+                <li><a class="line_hover center lang" href="#advantages" key="advantages">Переваги</a></li>
+                <li><a class="line_hover center lang" href="#about" key="about">Про нас</a></li>
+                <li><a class="line_hover center lang" href="#price" key="cost">Вартість</a></li>
+                <li><a class="line_hover center lang" href="https://agroregisters.com.ua/" target="_blank" key="agroregister">Аграрні розписки</a></li>
+                <li><a class="line_hover center lang" href="blocks/cadastral.html" target="_blank" key="cadastral-map">Кадастрова карта</a></li>
+                <!--                <li><a class="line_hover center" href="#faq">Відповіді</a></li>-->
             </ol>
         </nav>
         <div class="row second margin0">
             <div class="social">
-                <div class="columnTitle">Соціальні мережі</div>
+                <div class="columnTitle lang" key="social-networks">Соціальні мережі</div>
                 <a href="https://t.me/agroanalytics_bot" class="socialBtn" target="_blank">
                     <svg width="64" height="64" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path class="hover" opacity="0.05"
@@ -977,13 +1028,13 @@
             </div>
             <div class="middle">
                 <a href="javascript:void(0);" class="copyMail line_hover columnTitle"
-                    onclick="copyMail('+380986148954');">+380986148954</a>
+                onclick="copyMail('+380986148954');">+380986148954</a>
                 <a href="javascript:void(0);" class="copyMail line_hover columnTitle"
                    onclick="copyMail('info@feodal.online')">info@feodal.online</a>
-                <a href="mailto:info@feodal.online" target="_blank" class="mainBtn big white">Написати нам</a>
+                <a href="mailto:info@feodal.online" target="_blank" class="mainBtn big white lang" key="write">Написати нам</a>
             </div>
             <div class="payMethods">
-                <div class="columnTitle">Методи оплати в сервісі</div>
+                <div class="columnTitle lang" key="payment">Методи оплати в сервісі</div>
                 <img class="pay" src="./img/master card.svg" alt="master card">
                 <img class="pay" src="./img/visa.svg" alt="visa">
             </div>
@@ -997,7 +1048,7 @@
                     <img class="mukovoz" src="./img/mukovoz.svg" alt="mukovoz">
                 </a>
             </div>
-            <div class="right copy columnTitle">Всі права захищені.</div>
+            <div class="right copy columnTitle lang" key="rights">Всі права захищені.</div>
         </div>
     </div>
 </footer>
@@ -1009,10 +1060,9 @@
                     d="M15.9922 0.78125L5.71875 11.0547L1.96875 7.26562C1.77344 7.10938 1.46094 7.10938 1.30469 7.26562L0.171875 8.39844C0.015625 8.55469 0.015625 8.86719 0.171875 9.0625L5.40625 14.2578C5.60156 14.4531 5.875 14.4531 6.07031 14.2578L17.7891 2.53906C17.9453 2.38281 17.9453 2.07031 17.7891 1.875L16.6562 0.78125C16.5 0.585938 16.1875 0.585938 15.9922 0.78125Z"
                     fill="white"/>
         </svg>
-        <span>Cкопійовано</span>
+        <span class="lang" key="copy-mail">Cкопійовано</span>
     </div>
 </div>
-
 
 <div class="scrollTopBtn">
     <svg class="desktop" width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1046,6 +1096,7 @@
 
 <script src="./dist/js/libs2773.js" defer></script>
 <script src="./dist/js/script2773.js" defer></script>
+<script src="./dist/languages/translate.js" defer></script>
 <script>
     // When the user clicks on div, open the popup
     function youtubepopup() {
@@ -1066,7 +1117,7 @@
     }
 
 </script>
-
+        <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
     (function () {
         var widget_id = 'NSmo59nyGs';
@@ -1093,7 +1144,8 @@
         }
     })();
 </script>
-
+<!-- {/literal} END JIVOSITE CODE -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145038413-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -1115,21 +1167,3 @@
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '891932184606749');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=891932184606749&ev=PageView&noscript=1"/>
-</noscript>
-
-</html>

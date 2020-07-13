@@ -22,7 +22,10 @@ var header, scroll_top, aboutImg, scrollTopBtn, cursor, screenNow, blockquoteBlo
     production = "localhost" !== window.location.hostname,
     mobMenuOpen = !1,
     copyMailAccess = !0,
-    aosFadeArrDone = [".firstScreen .content > *", ".gridInfo .text > *", ".advantages h2", ".advantagesList li .wrap", ".howWork .text > *", ".howWorkList li", ".aboutBlock .text > *", "blockquote", ".priceItem", ".faqBlock h2", ".accordion"];
+    aosFadeArrDone = [".firstScreen .content > *", ".gridInfo .text > *", ".advantages h2", ".advantagesList li .wrap", 
+                    ".howWork .text > *", ".howWorkList li", ".aboutBlock .text > *", "blockquote", ".priceItem",
+                     ".audit li", ".audit h2", ".helperBlock li", ".helperBlock h2", ".recomendationBlock li", 
+                     ".recomendationBlock h2", ".contacts", ".faqBlock h2", ".accordion"];
 isMacLike && $("body, html").addClass("isMacLike"), isSafari && $("body, html").addClass("isSafari");
 var accordionsWrap, accordionsMainBlock, mainBtnSvg = {
         left: "<svg width=\"13\" height=\"14\" viewBox=\"0 0 13 14\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M1.00006 0.998779V12.9988H13.0001\" stroke=\"#00994E\" stroke-width=\"2\"/>\n    </svg>",
@@ -207,18 +210,20 @@ $(".contactForm, .regForm").submit(function (a) {
 });
 var navSections, headerNav, headerNavIndex;
 $(document).ready(function () {
-    headerNav = $("header nav a.section"), $("header nav a.section").each(function (a) {
-        var b = $(this).attr("href");
-        navSections = a ? navSections.add($(b)) : $(b)
-    }), $(window).scroll(function () {
-        var a = $(window).scrollTop();
-        navSections.each(function (b) {
-            var c = $(this).position().top,
-                d = $(this).innerHeight(),
-                e = a + window_height / 2;
-            return e >= c && e <= c + d ? headerNavIndex != b && (headerNavIndex = b, headerNav.removeClass("active"), headerNav.eq(b).addClass("active"), !1) : void(b == navSections.length - 1 && (headerNavIndex = void 0, headerNav.removeClass("active")))
-        })
-    }).scroll()
+    if ($("header nav a.section") == true) {
+        headerNav = $("header nav a.section"), $("header nav a.section").each(function (a) {
+            var b = $(this).attr("href");
+            navSections = a ? navSections.add($(b)) : $(b)
+        }), $(window).scroll(function () {
+            var a = $(window).scrollTop();
+            navSections.each(function (b) {
+                var c = $(this).position().top,
+                    d = $(this).innerHeight(),
+                    e = a + window_height / 2;
+                return e >= c && e <= c + d ? headerNavIndex != b && (headerNavIndex = b, headerNav.removeClass("active"), headerNav.eq(b).addClass("active"), !1) : void(b == navSections.length - 1 && (headerNavIndex = void 0, headerNav.removeClass("active")))
+            })
+        }).scroll()
+    }
 });
 var popup = {
     hide_popup_timer: void 0,
@@ -476,7 +481,7 @@ function scrollTo(a, b) {
 }
 
 function aos_init() {
-    $(".aos").attr("data-aos", "fade-up"), $(aosFadeArrDone.join(",")).addClass("aos").attr("data-aos", "fade-up"), setDelayTransform(".firstScreen .content > *", 0), setDelayTransform(".advantagesList li .wrap", 0), setDelayTransform(".howWorkList li", 0), setDelayTransform(".priceItem", 0), setTimeout(function () {
+    $(".aos").attr("data-aos", "fade-up"), $(aosFadeArrDone.join(",")).addClass("aos").attr("data-aos", "fade-up"), setDelayTransform(".firstScreen .content > *", 0), setDelayTransform(".advantagesList li .wrap", 0), setDelayTransform(".howWorkList li", 0), setDelayTransform(".priceItem", 0), setDelayTransform(".audit li .wrap", 0), setDelayTransform(".helperBlock li", 0), setTimeout(function () {
         AOS.init({
             duration: 500,
             once: !0,
@@ -505,9 +510,7 @@ function wrapBlockTitle() {
 function checkSizeAboutImg() {
     aboutImg.width(window.innerWidth - aboutImg.offset().left)
 }
-$(document).ready(function () {
-    aboutImg = $(".aboutImg"), checkSizeAboutImg(), $(window).on("resize.checkSizeAboutImg", checkSizeAboutImg)
-});
+
 
 function initPopupVideo() {
     var a = $("#video_html"),
@@ -551,6 +554,7 @@ function copyMail() {
     }, c / 1e3), setTimeout(function () {
         copyMailAccess = !0
     }, c + animationTime)
+    
 }
 
 var bgLinesClone;
@@ -616,14 +620,24 @@ $(document).ready(function () {
             }
         })
     })
+    
 });
 
 $(function() {
     $('.arrowScroll').on('click', function(e) {
       e.preventDefault();
       $('html, body').animate({
-        scrollTop: $("#aboutService").offset().top,
+        scrollTop: $(".blockToScroll").offset().top,
         eaasing: "linear"
     }, 1500);
     });
   });
+
+(function() {
+    let langBlock = document.querySelector('.langBlock ul');
+    langBlock.addEventListener('click', (el) => {
+        let active = document.querySelector('.langBlock .active');
+        active.classList.remove('active');
+        el.srcElement.classList.add('active');
+    })
+})()
