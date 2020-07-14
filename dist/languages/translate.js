@@ -344,11 +344,13 @@ $(document).ready(function() {
     });
     
     if (lang == 'rus') {
-      $("input:text").attr('placeholder', 'Ваше имя');
+      $("input[name='name']").attr('placeholder', 'Ваше имя');
+      $("input[name='phoneNumber']").attr('placeholder', 'Ваш номер телефона');
       $("textarea").attr('placeholder', 'Ваше сообщение');
     }
     else {
-      $("input:text").attr('placeholder', 'Ваше імя');
+      $("input[name='name']").attr('placeholder', 'Ваше імя');
+      $("input[name='phoneNumber']").attr('placeholder', 'Ваш номер телефону');
       $("textarea").attr('placeholder', 'Ваше повідомлення');
     }
 
