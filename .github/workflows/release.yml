@@ -1,0 +1,32 @@
+name: Release
+on:
+  release:
+    types: [published]
+env:
+  GITHUB_TOKEN: ${{ github.token }}
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@master
+      - name: Release
+        id: release
+        run: echo "::set-output name=tag::$(echo ${GITHUB_REF/refs\/tags\//})"
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: 'release.zip'
+          exclusions: '*.git* /*node_modules/* /*assets/* /*baseTempates/* /*build/* /*locales/* .gitignore links.txt'
+      - name: Get Release
+        id: get_release
+        uses: bruceadams/get-release@v1.2.0
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          asset_path: ./release.zip
+          asset_name: ${{ steps.release.outputs.tag }}.zip
+          asset_content_type: application/zip
