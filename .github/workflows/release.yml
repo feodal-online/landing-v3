@@ -13,7 +13,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           filename: 'release.zip'
-          exclusions: '*.git* assets/* baseTempates/* build/* locales/* .gitignore links.txt'
+          exclusions: '*.git* /*node_modules/* /*assets/* /*baseTempates/* /*build/* /*locales/* .gitignore links.txt'
       - name: Get Release
         id: get_release_upload_url
         uses: bruceadams/get-release@v1.2.0
