@@ -3456,7 +3456,7 @@ header.hide nav a {
 }
 
 .scrollTopBtn {
-    position: fixed;
+    position: fixed !important;
     right: 5px;
     bottom: 60px;
     z-index: 49;
