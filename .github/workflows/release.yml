@@ -1,0 +1,14 @@
+name: Release
+on:
+  release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@master
+    - name: Archive Release
+      uses: thedoctor0/zip-release@master
+      with:
+        filename: 'release.zip'
+        exclusions: '*.git* assets/* baseTempates/* build/* locales/* .gitignore links.txt'
