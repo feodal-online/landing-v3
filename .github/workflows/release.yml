@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@master
+      - name: Release
+        id: release
+        run: echo ::set-env name=RELEASE_TAG::$(echo ${GITHUB_REF/refs\/tags\//})
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
@@ -25,5 +28,5 @@ jobs:
         with:
           upload_url: ${{ steps.get_release_upload_url.outputs.upload_url }}
           asset_path: ./release.zip
-          asset_name: release.zip
+          asset_name: $RELEASE_TAG-release.zip
           asset_content_type: application/zip
