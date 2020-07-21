@@ -43,6 +43,9 @@
                 </div>
                 <nav>
                     <ol>
+                        <li><a class="line_hover center section" href="#about" data-t>about</a></li>
+                        <li><a class="line_hover center section" href="#price" data-t>cost</a></li>
+                        <li><a class="line_hover center section" href="#contacts" data-t>contacts</a></li>
                         <li class="burger_menu_only">
                             <a class="line_hover center" href="https://feodal.online/monitor/" target="_blank" data-t>login</a>
                         </li>  
@@ -329,15 +332,27 @@
                 </div>
             </div>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="contacts">
+            <div class="blockTitle">
+                <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="13" width="62" height="13" transform="rotate(90 13 0)" fill="#007940" fill-opacity="0.1"></rect>
+                    <rect x="10" y="3" width="56" height="7" transform="rotate(90 10 3)" fill="#007940" fill-opacity="0.1">
+                    </rect>
+                    <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"></rect>
+                </svg>
+                <span>contacts</span>
+            </div>
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-6 col-12 columnLeft">
                         <h2 data-t>ourContacts</h2>
-                        <p data-t>phoneNumber</p>
+                        <div class='phoneNumber'>
+                            <span data-t>phoneNumber</span>
+                            <span class="number">+38098 <span class="showPhoneNumber" data-t>show</span></span>
+                        </div>
                         <p data-t>e-mail</p>
-                        <p data-t>adress</p>
-                        <div class="social">
+                        <a href="https://goo.gl/maps/2hbQYQ4aoLwHRYJ76" target="_blank" data-t>adress</a>
+                        <div class="social mt-2">
                             <a href="https://t.me/agroanalytics_bot" class="socialBtn" target="_blank">
                                 <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="hover" opacity="0.05"
@@ -437,7 +452,7 @@
                             <!-- <input type="email" name="email" placeholder="Ваш e-mail"> -->
                             <input type="text" name="phone" placeholder="Ваш номер телефону">
                             <textarea name="message" placeholder="Ваше повідомлення"></textarea>
-                            <button type="submit" class="mainBtn big withArrow bringHover lang" value="Надіслати" class="no-visible">
+                            <button type="submit" class="mainBtn big withArrow bringHover" value="Надіслати" class="no-visible">
                         </form>
                     </div>
                 </div>
@@ -461,6 +476,15 @@
                         fill="#A8A8A8" />
                 </svg>
             </div>
+            <nav class="additional-nav-footer">
+                <ol>
+                    <li><a class="line_hover center" href="audit.html" data-t>audit</a></li>
+                    <li><a class="line_hover center" href="check.html" data-t>check</a></li>
+                    <li><a class="line_hover center" href="observation.html" data-t>observation</a></li>
+                    <li><a class="line_hover center" href="changes.html" data-t>changes</a></li>
+                    <li><a class="line_hover center" href="map-visualisation.html" data-t>map-visualisation</a></li>
+                </ol>
+            </nav>
             <div class="row second margin0">
                 <div class="social">
                     <div class="columnTitle" data-t>social-networks</div>
@@ -557,8 +581,6 @@
                 </div>
                 <div class="middle">
                     <a href="javascript:void(0);" class="copyMail line_hover columnTitle"
-                    onclick="copyMail('+380986148954');">+380986148954</a>
-                    <a href="javascript:void(0);" class="copyMail line_hover columnTitle"
                        onclick="copyMail('info@feodal.online')">info@feodal.online</a>
                     <a href="mailto:info@feodal.online" target="_blank" class="mainBtn big white" data-t>write</a>
                 </div>
@@ -624,9 +646,8 @@
 
 <script src="../dist/js/libs2773.js" defer></script>
 <script src="../dist/js/script2773.js" defer></script>
-<!-- <script src="../dist/languages/translate.js" defer></script> -->
 <script src="../assets/js/libs/jquery-2.2.4.min.js"></script>
-
+<script id="ss-gadget" src="https://customer.smartsender.eu/js/client/gd.min.js?e001" data-target="EES5q40t" data-domain="agro"></script>
 <script>
 $(document).ready(function () {
     aboutImg = $(".aboutImg"), checkSizeAboutImg(), $(window).on("resize.checkSizeAboutImg", checkSizeAboutImg)

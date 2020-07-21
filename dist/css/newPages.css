@@ -40,7 +40,7 @@
 /*Cadastral Page*/
 
 .cadastralPage .opportunities {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .cadastralPage .opportunities img{
@@ -65,6 +65,10 @@
 .cadastralPage .advantagesList p {
     padding-left: 10px;
 }
+
+.cadastralPage .underline {
+    text-decoration: underline;
+}
 /*Cadastral Page*/
 
 /*Audit Page*/
@@ -78,6 +82,10 @@
 
 .auditPage .firstScreen .container {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+.auditPage .lastBlock {
+    background-color: #f1f1f1;
 }
 
 .companyLogo{
@@ -99,6 +107,18 @@ align-items: center;
 }
 
 @media(max-width: 768px) {
+    .auditPage .firstScreen .container {
+        background-color: rgba(1, 1, 1, 0.6);
+    }
+    .auditPage .firstScreen h2,
+    .auditPage .firstScreen h5 {
+        font-size: 1.2em;
+        color: #fff;
+    }
+
+    .auditPage .lastBlock h5{
+        font-size: 1.2em;
+    }
     .companyLogo div {
         margin: 20px 0px;
     }
@@ -148,12 +168,20 @@ align-items: center;
     transform: scale(-1,1);
 }
 
+.checkPage .secondBlock {
+    background-color: #f1f1f1;
+}
+
 @media(max-width: 768px) {
     .checkPage .secondBlock .illustrationWrap {
         display: none;
     }
     .firstBlock .text p,
     .secondBlock .text p {
+        font-size: 1.2em;
+    }
+    .checkPage .firstScreen h2,
+    .checkPage .firstScreen h5 {
         font-size: 1.2em;
     }
 }
@@ -173,6 +201,10 @@ align-items: center;
     font-weight: 500;
 }
 
+.observationPage .secondBlock{
+    background-color: #f1f1f1;
+}
+
 .observationPage .secondBlock .illustrationWrap{
     width: 50%;
     margin-left: 0px;
@@ -188,6 +220,11 @@ align-items: center;
 
 
 @media(max-width: 768px) {
+    .observationPage .firstScreen h2,
+    .observationPage .firstScreen h5 {
+        font-size: 1.2em;
+    }
+
     .observationPage .secondBlock .illustration {
         left: 50%;
     }
@@ -214,9 +251,18 @@ align-items: center;
     padding: 150px;
 }
 
+.changesPage .howWork {
+    background-color: #f1f1f1;
+}
+
 @media(max-width: 768px) {
     .changesPage .firstBlock{
         background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .changesPage .firstScreen h2,
+    .changesPage .firstScreen h5 {
+        font-size: 1.2em;
     }
 
     .changesPage .firstBlock .container {
@@ -240,9 +286,19 @@ align-items: center;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
+.mapVisualisationPage .secondBlock {
+    background-color: #f1f1f1;
+}
+
+@media(max-width: 768px) {
+    .mapVisualisationPage .firstScreen h2,
+    .mapVisualisationPage .firstScreen h5 {
+        font-size: 1.2em;
+    }
+}
 
 /* map-visualisation Page */
 
 .talkAbout .container {
-    background: linear-gradient(270deg, rgb(119, 121, 118), transparent,rgb(119, 121, 118));
+    background: linear-gradient(270deg, rgb(187, 201, 187), transparent,rgb(187, 201, 187));
 }

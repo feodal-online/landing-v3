@@ -774,6 +774,21 @@ ul {
     clear: both
 }
 
+.showPhoneNumber {
+    padding: 0 15px;
+    border: 2px solid #00994e;
+    color: #fff;
+    font-family: Gilroy;
+    outline: 0;
+    cursor: pointer;
+    z-index: 5;
+    background: rgb(98,189,146);
+}
+
+.phoneNumber {
+    margin-bottom: 16px;
+}
+
 .mainBtn {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -2482,6 +2497,12 @@ nav a.active {
     -ms-transform: translate(-20%, -18px);
     transform: translate(-20%, -18px)
 }
+.gridInfo#services .visible_link {
+    text-decoration: underline !important;
+}
+.gridInfo#services .visible_link:hover {
+    text-decoration: none !important;
+}
 
 .text {
     color: #000;
@@ -3192,6 +3213,10 @@ footer nav ol {
     justify-content: space-between
 }
 
+footer nav.additional-nav-footer ol {
+    text-align: center;
+}
+
 footer nav ol a {
     letter-spacing: .05em
 }
@@ -3457,8 +3482,8 @@ header.hide nav a {
 
 .scrollTopBtn {
     position: fixed !important;
-    right: 5px;
-    bottom: 60px;
+    right: 12px;
+    bottom: 100px;
     z-index: 49;
     cursor: pointer;
     -webkit-user-select: none;
@@ -4357,6 +4382,10 @@ header {
         padding-bottom: 27px
     }
 
+    .scrollTopBtn {
+        right: 23px;
+    }
+
     .scrollTopBtn svg {
         width: 70px;
         height: 70px
@@ -4893,6 +4922,10 @@ header {
 
     header.small {
         padding-top: 2px
+    }
+
+    .scrollTopBtn {
+        right: 35px;
     }
 
     .scrollTopBtn svg {
@@ -5570,6 +5603,9 @@ header {
 }
 
 @media screen and (max-width:768px) {
+    #video_html {
+        display: none !important;
+    }
     .gridInfo {
         margin-bottom: 50px
     }
@@ -6179,6 +6215,10 @@ header {
         margin-bottom: 19px
     }
 
+    footer nav.additional-nav-footer li {
+        width:100%;
+    }
+
     footer nav li:nth-child(2n+2) {
         padding-left: 21px
     }
@@ -6736,6 +6776,11 @@ header {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap
     }
+    
+    footer nav.additional-nav-footer ol {
+        flex-direction: column;
+        text-align: center;
+    }
     .bgLines .line:first-child {
         width: 46px
     }
@@ -6843,6 +6888,11 @@ header {
     .audit:before {
         left: 0;
         right: 0
+    }
+
+    .scrollTopBtn {
+        right: 25px;
+        bottom: 80px;
     }
 }
 
