@@ -640,4 +640,11 @@ $(function() {
         active.classList.remove('active');
         el.srcElement.classList.add('active');
     })
-})()
+})();
+
+$(document).ready(function () {
+    $(".showPhoneNumber").click(() => {
+        $(".showPhoneNumber").css('display', 'none');
+        $('.number').html("+380986148954");
+    });
+});

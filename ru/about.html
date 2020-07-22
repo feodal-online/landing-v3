@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Управління та облік земельним банком. Feodal</title>
+    <title>Управление и учет земельным банком. Feodal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0, minimal-ui">
-    <meta name="keywords" content="земельний банк, облік земельного банку, контроль над земельним банком">
+    <meta name="keywords" content="земельный банк, учет земельного банка, контроль над земельным банком">
     <!-- open graph -->
     <meta property="og:url" content="https://feodal.online/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Управління та облік земельним банком. Feodal">
-    <meta property="og:description" content="Feodal - онлайн сервіс управління земельним банком. Аудит та облік земельних ділянок.">
+    <meta property="og:type" con6tent="website">
+    <meta property="og:title" content="Управление и учет земельным банком. Feodal">
+    <meta property="og:description" content="Feodal - онлайн сервис управления земельным банком. Аудит и учет земельных участков.">
     <meta property="og:image" content="https://feodal.online/img/feodal.jpg">
     <!-- open graph -->
     <!-- favicon -->
@@ -41,6 +41,9 @@
                 </div>
                 <nav>
                     <ol>
+                        <li><a class="line_hover center section" href="#about">О нас</a></li>
+                        <li><a class="line_hover center section" href="#price">Стоимость</a></li>
+                        <li><a class="line_hover center section" href="#contacts">Контакты</a></li>
                         <li class="burger_menu_only">
                             <a class="line_hover center" href="https://feodal.online/monitor/" target="_blank">Вход</a>
                         </li>  
@@ -264,15 +267,27 @@
                 </div>
             </div>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="contacts">
+            <div class="blockTitle">
+                <svg width="13" height="62" viewBox="0 0 13 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="13" width="62" height="13" transform="rotate(90 13 0)" fill="#007940" fill-opacity="0.1"></rect>
+                    <rect x="10" y="3" width="56" height="7" transform="rotate(90 10 3)" fill="#007940" fill-opacity="0.1">
+                    </rect>
+                    <rect x="7.00171" y="6" width="50" height="1" transform="rotate(90 7.00171 6)" fill="#007940"></rect>
+                </svg>
+                <span>Контакты</span>
+            </div>
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md-6 col-12 columnLeft">
                         <h2>Наши контакты</h2>
-                        <p>Номер телефона: +380986148954</p>
+                        <div class="phoneNumber">
+                            <span>Номер телефона: </span>
+                            <span class="number">+38098 <span class="showPhoneNumber">Показать</span></span>
+                        </div>
                         <p>Электронная почта: info@feodal.online</p>
-                        <p>г. Львов, ул Валовая 9</p>
-                        <div class="social">
+                        <a href="https://goo.gl/maps/2hbQYQ4aoLwHRYJ76" target="_blank">г. Львов, ул Валовая 9</a>
+                        <div class="social mt-2">
                             <a href="https://t.me/agroanalytics_bot" class="socialBtn" target="_blank">
                                 <svg width="31" height="31" viewbox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path class="hover" opacity="0.05" d="M17.0514 3.24493C9.42604 3.24493 3.24495 9.42603 3.24495 17.0514C3.24495 24.6767 9.42604 30.8578 17.0514 30.8578C24.6767 30.8578 30.8578 24.6767 30.8578 17.0514C30.8578 9.42603 24.6767 3.24493 17.0514 3.24493Z" fill="rgb(104,196,149)"/>
@@ -311,7 +326,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-12 columnRight">
-                        <p class="text-center font-weight-bold"> Напишите нам</p>
+                        <p class="text-center font-weight-bold" data-t> Напишите нам</p>
                         <form action="/monitor/contact/" method="POST" class="contact-form">
                             <input type="text" name="name" placeholder="Ваше имя">
                             <!-- <input type="email" name="email" placeholder="Ваш e-mail"> -->
@@ -337,6 +352,15 @@
                     <path d="M71.9461 8.40303L73.3741 12.7705L77.769 11.3517L76.341 6.98426L71.9461 8.40303Z" fill="#A8A8A8"/>
                 </svg>
             </div>
+            <nav class="additional-nav-footer">
+                <ol>
+                    <li><a class="line_hover center" href="audit.html">Аудит Собственного земельного банка</a></li>
+                    <li><a class="line_hover center" href="check.html">Проверка работы подчиненных</a></li>
+                    <li><a class="line_hover center" href="observation.html">Наблюдение за земельными банками конкурентов</a></li>
+                    <li><a class="line_hover center" href="changes.html">Контроль смены собственников земельных участков</a></li>
+                    <li><a class="line_hover center" href="map-visualisation.html">Визуализация участков на карте</a></li>
+                </ol>
+            </nav>
             <div class="row second margin0">
                 <div class="social">
                     <div class="columnTitle">Социальные сети</div>
@@ -377,7 +401,6 @@
                     </a>
                 </div>
                 <div class="middle">
-                    <a href="javascript:void(0);" class="copyMail line_hover columnTitle" onclick="copyMail('+380986148954');">+380986148954</a>
                     <a href="javascript:void(0);" class="copyMail line_hover columnTitle" onclick="copyMail('info@feodal.online')">info@feodal.online</a>
                     <a href="mailto:info@feodal.online" target="_blank" class="mainBtn big white">написать нам</a>
                 </div>
@@ -439,14 +462,14 @@
 
 <script src="../dist/js/libs2773.js" defer></script>
 <script src="../dist/js/script2773.js" defer></script>
-<script src="../dist/js/jquery-2.2.4.min.js"></script>
+<script src="../assets/js/libs/jquery-2.2.4.min.js"></script>
 
 <script>
 $(document).ready(function () {
     aboutImg = $(".aboutImg"), checkSizeAboutImg(), $(window).on("resize.checkSizeAboutImg", checkSizeAboutImg)
 });
 </script>
-
+<script id="ss-gadget" src="https://customer.smartsender.eu/js/client/gd.min.js?e001" data-target="EES5q40t" data-domain="agro"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145038413-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
