@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /password-reset/
+
+Host: https://feodal.online
+Sitemap: https://feodal.online/sitemap.xml
