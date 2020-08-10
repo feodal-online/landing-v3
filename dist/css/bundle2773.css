@@ -4975,16 +4975,19 @@ header {
         margin-right: 7px
     }
     .popup .popuptext {
-    width: 800px;
-    height: 500px;
-    background-color: #fff;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    z-index: 999;
-    bottom: 0;
-    left: 0;
-}
+        width: 800px;
+        height: 500px;
+        background-color: #fff;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 999;
+        bottom: 0;
+        left: 0;
+    }
+    .additional-nav-footer li {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:840px) {
@@ -6217,10 +6220,7 @@ header {
 
     footer nav.additional-nav-footer li {
         width:100%;
-    }
-
-    footer nav li:nth-child(2n+2) {
-        padding-left: 21px
+        margin-bottom: 16px;
     }
 
     footer nav a {
