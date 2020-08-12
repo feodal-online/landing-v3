@@ -218,6 +218,17 @@ align-items: center;
     height: 100vh;
 }
 
+@media(max-width: 1200px) {
+    .observationPage .video iframe{
+        height: 500px;
+    }
+}
+
+@media(max-width: 480px) {
+    .observationPage .video iframe{
+        height: 300px;
+    }
+}
 
 @media(max-width: 768px) {
     .observationPage .firstScreen h2,
@@ -227,6 +238,9 @@ align-items: center;
 
     .observationPage .secondBlock .illustration {
         left: 50%;
+    }
+    .observationPage .video iframe{
+        height: 400px;
     }
 }
 /* Observation Page*/
