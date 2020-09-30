@@ -648,3 +648,12 @@ $(document).ready(function () {
         $('.number').html("+380986148954");
     });
 });
+
+$(".close-button").on("click", () => {
+    $(".telegram-form").remove();
+});
+
+
+ if ($(window).width() < 768) {
+     $("#ss-gadget").remove();
+ }
