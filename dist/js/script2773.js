@@ -649,8 +649,12 @@ $(document).ready(function () {
     });
 });
 
-$(".close-button").on("click", () => {
+$(".telegram-form .close-button").on("click", () => {
     $(".telegram-form").remove();
+});
+
+$(".hromada-form .close-button").on("click", () => {
+    $(".hromada-form").remove();
 });
 
 
