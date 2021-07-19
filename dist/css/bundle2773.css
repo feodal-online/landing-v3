@@ -7429,8 +7429,8 @@ form.contacts {
 
   .form-wrapper {
     position: absolute;
-    top: 70%;
-    width: 25%;
+    top: 67%;
+    width: 412px;
     z-index: 1000;
     margin-left: 2%;
     display: flex;
@@ -7446,8 +7446,8 @@ form.contacts {
 
   .hromada-form {
       position: absolute;
-      top: 70%;
-      width: 25%;
+      top: 67%;
+      width: 412px;
       z-index: 1000;
       color: white;
       padding: 8px 8px 14px 8px;
@@ -7470,6 +7470,7 @@ form.contacts {
       right: 0;
       margin-right: 2%;
   }
+
   .hromada-form svg{
     width: 100%;
   }
@@ -7495,10 +7496,24 @@ form.contacts {
       cursor: pointer;
   }
 
+  @media screen and (max-width:1255px) {
+    .form-wrapper, .hromada-form {
+        top: 67%;
+        width: 315px;
+    }
+  }
+
+  @media screen and (max-width:991px) {
+    .form-wrapper, .hromada-form {
+        top: 67%;
+        width: 315px;
+    }
+  }
+
   @media screen and (max-width:768px) {
     .telegram-form, .hromada-form {
         position: fixed;
-        top: inherit;
+        top: initial !important;
         bottom: 0%;
         width: 100%;
         z-index: 1000;
@@ -7513,19 +7528,30 @@ form.contacts {
     }
 
     .telegram-form {
-        top: 70%;
+        bottom: 90px;
         height: auto;
     }
 
+    .telegram-form svg{
+        width: 50px;
+    }
+
+    .hromada-form a {
+        min-height: 80px;
+    }
   
     .telegram-form .close-button,
     .hromada-form .close-button {
       position: absolute;
-      top: -23px;
+      top: 0;
       right: 0;
+      padding: 10px 20px;
+      z-index: 100;
+      font-size: 1.5em;
       color: rgb(158, 158, 158);
     }
   }
+
 
   .uppercase {
       text-transform: uppercase;
