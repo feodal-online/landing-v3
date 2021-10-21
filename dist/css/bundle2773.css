@@ -3483,7 +3483,7 @@ header.hide nav a {
 .scrollTopBtn {
     position: fixed !important;
     right: 12px;
-    bottom: 100px;
+    bottom: 130px;
     z-index: 49;
     cursor: pointer;
     -webkit-user-select: none;
@@ -3509,6 +3509,10 @@ header.hide nav a {
 
 .scrollTopBtn .mobile {
     display: none
+}
+
+.messenger {
+    bottom: 50px !important;
 }
 
 .bgLines {
@@ -6892,7 +6896,7 @@ header {
 
     .scrollTopBtn {
         right: 25px;
-        bottom: 80px;
+        bottom: 110px;
     }
 }
 
